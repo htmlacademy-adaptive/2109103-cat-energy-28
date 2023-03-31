@@ -38,17 +38,18 @@
               <input class="field-group__text" name="name" id="name" type="text" placeholder="Барсик" required>
             </p>
             <p class="form-text__field-group">
-              <label for="name">Вес (кг):*</label>
-              <input class="field-group__text" name="name" id="name" type="text" placeholder="7" required>
+              <label for="weight">Вес (кг):*</label>
+              <input class="field-group__text" name="weight" id="weight" type="text" placeholder="7" required>
             </p>
             <p class="form-text__field-group">
-              <label for="name">Возраст (лет):</label>
-              <input class="field-group__text" name="name" id="name" type="text" placeholder="7">
+              <label for="age">Возраст (лет):</label>
+              <input class="field-group__text" name="age" id="age" type="text" placeholder="7">
             </p>
           </form>
         </div>
 
         <div class="questionnaire__radio radio-field">
+          <h2 class="visually-hidden"></h2>
           <ul class="radio-field__list">
 
             <li class="radio-field__item">
@@ -88,15 +89,15 @@
         </div>
 
         <div class="contact-info">
-
+          <h2 class="contact-info__title">Контактные данные (владельца кота)</h2>
           <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
             <p class="form-text__group field-group">
-              <label for="name">E-mail:*</label>
-              <input class="field-group__text" name="name" id="name" type="text" placeholder="kuklachev@gmail.com" required>
+              <label for="mail">E-mail:*</label>
+              <input class="field-group__text" name="mail" id="mail" type="email" placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="form-text__field-group">
-              <label for="name">Телефон:*</label>
-              <input class="field-group__text" name="name" id="name" type="text" placeholder="8 (960) 900-60-90" required>
+              <label for="phone">Телефон:*</label>
+              <input class="field-group__text" name="phone" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
             </p>
           </form>
 
@@ -107,7 +108,7 @@
 
             <fieldset class="comment__group">
               <legend class="comment__title">Комментарий</legend>
-              <textarea name="comment" id="" cols="30" rows="10"></textarea>
+              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
           </div>
@@ -199,13 +200,13 @@
           </a>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" class="social__link"><span class="visually-hidden">Мы в Вконтакте.</span></a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy" class="social__link"><span class="visually-hidden">Мы в Ютубе.</span></a>
+              <a class="social__link social__link--youtube" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Ютубе.</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://vk.com/htmlacademy" class="social__link"><span class="visually-hidden">Мы в Телеграм.</span></a>
+              <a class="social__link social__link--telegram" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Телеграм.</span></a>
             </li>
           </ul>
         </div>
