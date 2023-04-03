@@ -8,29 +8,27 @@
 
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи».">
-      </a>
-      <a href="#" class="main-header__main-logo logo-name">
-        <img src="img/logo-name.svg" alt="Название магазина на английском.">
+        <img src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
+        <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <main class="main-container">
@@ -42,7 +40,7 @@
         <p class="main-hero__description">
           Занялся собой? Займись котом!
         </p>
-        <button class="main-hero__button button">
+        <button class="main-hero__button button" type="button">
           Подобрать программу
         </button>
 
@@ -57,7 +55,7 @@
             Пора на диету! Cat Energy Slim поможет вашему питомцу
             сбросить лишний вес.
           </p>
-          <button class="card__button button-product">
+          <button class="card__button button-product" type="button">
             Каталог slim
             <svg class="button-product__go-to-icon" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
@@ -75,7 +73,7 @@
             Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!
           </p>
-          <button class="card__button button-product">
+          <button class="card__button button-product" type="button">
             Каталог pro
             <svg class="button-product__go-to-icon" width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
@@ -92,7 +90,7 @@
           Как это работает
         </h2>
         <div class="explainer__card card-instruction">
-          <img class="card-instruction__image" src="img/card-instruction/card-instruction--leaf.svg" alt="Питательные вещества.">
+          <img class="card-instruction__image" src="img/card-instruction/card-instruction-leaf.svg" alt="Питательные вещества." width="25" height="28">
           <p class="card-instruction__description">
             Функциональное питание
             содержит только полезные
@@ -101,7 +99,7 @@
         </div>
 
         <div class="explainer__card card-instruction">
-          <img class="card-instruction__image" src="img/card-instruction/card-instruction--powder.svg" alt="Питательные вещества.">
+          <img class="card-instruction__image" src="img/card-instruction/card-instruction-powder.svg" alt="Питательные вещества." width="26" height="29">
           <p class="card-instruction__description">
             Функциональное питание
             содержит только полезные
@@ -110,7 +108,7 @@
         </div>
 
         <div class="explainer__card card-instruction">
-          <img class="card-instruction__image" src="img/card-instruction/card-instruction--eat.svg" alt="Питательные вещества.">
+          <img class="card-instruction__image" src="img/card-instruction/card-instruction-eat.svg" alt="Питательные вещества." width="25" height="30">
           <p class="card-instruction__description">
             Замените один-два приема
             обычной еды на наше
@@ -119,7 +117,7 @@
         </div>
 
         <div class="explainer__card card-instruction">
-          <img class="card-instruction__image" src="img/card-instruction/card-instruction--time.svg" alt="Питательные вещества.">
+          <img class="card-instruction__image" src="img/card-instruction/card-instruction-time.svg" alt="Питательные вещества." width="26" height="31">
           <p class="card-instruction__description">
             Уже через месяц
             наслаждайтесь изменениями
@@ -164,8 +162,8 @@
           <p class="slider__description">
             Затраты на питание: 15 000 руб.
           </p>
-          <img class="slider__image--before" src="img/cat-before.png" alt="Кот до.">
-          <img class="slider__image--after" src="img/cat-after.png" alt="Кот после.">
+          <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Кот до." width="280" height="256">
+          <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Кот после." width="280" height="256">
         </div>
 
       </section>
@@ -176,7 +174,7 @@
       <div class="main-footer__wrapper">
 
         <div class="main-footer__map">
-          <img src="img/map.jpg" alt="Карта где можно найти Кэт Энерджи.">
+          <img src="img/map.jpg" alt="Карта где можно найти Кэт Энерджи." width="320" height="362">
         </div>
 
         <div class="main-footer__location">
@@ -191,8 +189,8 @@
         </div>
 
         <div class="main-footer__social social">
-          <a href="#" class="social__logo logo-name">
-            <img src="img/logo-name.svg" alt="Название магазина на английском.">
+          <a href="#" class="social__logo">
+            <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
           </a>
           <ul class="social__list">
             <li class="social__item">

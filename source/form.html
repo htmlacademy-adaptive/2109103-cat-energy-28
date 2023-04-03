@@ -6,17 +6,28 @@
   </head>
   <body class="page__body">
 
-    <header class="form-header">
+    <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи».">
-      </a>
-      <a href="#" class="main-header__main-logo logo-name">
-        <img src="img/logo-name.svg" alt="Название магазина на английском.">
+        <img src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
+        <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -37,11 +48,11 @@
               <label for="name">Имя:*</label>
               <input class="field-group__text" name="name" id="name" type="text" placeholder="Барсик" required>
             </p>
-            <p class="form-text__field-group">
+            <p class="form-text__field-group field-group">
               <label for="weight">Вес (кг):*</label>
               <input class="field-group__text" name="weight" id="weight" type="text" placeholder="7" required>
             </p>
-            <p class="form-text__field-group">
+            <p class="form-text__field-group field-group">
               <label for="age">Возраст (лет):</label>
               <input class="field-group__text" name="age" id="age" type="text" placeholder="7">
             </p>
@@ -49,12 +60,12 @@
         </div>
 
         <div class="questionnaire__radio radio-field">
-          <h2 class="visually-hidden"></h2>
+          <h2 class="visually-hidden">Цель программы.</h2>
           <ul class="radio-field__list">
 
             <li class="radio-field__item">
               <label class="radio-field__control control">
-                <input  class="visually-hidden control__input" type="radio" value="weight-loose" checked>
+                <input class="visually-hidden control__input" type="radio" value="weight-loose" name="choose-aim" checked>
                 <span class="control__mark control__mark--round">
                 </span>
                 <span class="control__label">
@@ -65,7 +76,7 @@
 
             <li class="radio-field__item">
               <label class="radio-field__control control">
-                <input  class="visually-hidden control__input" type="radio" value="weight-gain">
+                <input  class="visually-hidden control__input" type="radio" value="weight-gain" name="choose-aim">
                 <span class="control__mark control__mark--round">
                 </span>
                 <span class="control__label">
@@ -76,7 +87,7 @@
 
             <li class="radio-field__item">
               <label class="radio-field__control control">
-                <input  class="visually-hidden control__input" type="radio" value="dont-know">
+                <input  class="visually-hidden control__input" type="radio" value="dont-know" name="choose-aim">
                 <span class="control__mark control__mark--round">
                 </span>
                 <span class="control__label">
@@ -95,7 +106,7 @@
               <label for="mail">E-mail:*</label>
               <input class="field-group__text" name="mail" id="mail" type="email" placeholder="kuklachev@gmail.com" required>
             </p>
-            <p class="form-text__field-group">
+            <p class="form-text__field-group field-group">
               <label for="phone">Телефон:*</label>
               <input class="field-group__text" name="phone" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
             </p>
@@ -168,19 +179,19 @@
         </div>
 
         <div class="questionnaire__button-container">
-          <button class="questionnaire__button button">Отправить заявку</button>
+          <button class="questionnaire__button button" type="submit">Отправить заявку</button>
           <span class="required-field">* — Обязательные поля</span>
         </div>
 
       </section>
     </main>
 
-    <footer class="form-footer">
+    <footer class="main-footer">
 
       <div class="main-footer__wrapper">
 
         <div class="main-footer__map">
-          <img src="img/map.jpg" alt="Карта где можно найти Кэт Энерджи.">
+          <img src="img/map.jpg" alt="Карта где можно найти Кэт Энерджи." width="320" height="362">
         </div>
 
         <div class="main-footer__location">
@@ -195,8 +206,8 @@
         </div>
 
         <div class="main-footer__social social">
-          <a href="#" class="social__logo logo-name">
-            <img src="img/logo-name.svg" alt="Название магазина на английском.">
+          <a href="#" class="social__logo">
+            <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
           </a>
           <ul class="social__list">
             <li class="social__item">
