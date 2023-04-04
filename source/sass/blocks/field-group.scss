@@ -1,0 +1,9 @@
+.field-group {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.field-group__text::placeholder {
+  font-family: inherit;
+  text-transform: uppercase;
+}
