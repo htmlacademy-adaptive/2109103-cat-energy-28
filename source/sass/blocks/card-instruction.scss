@@ -1,3 +1,7 @@
+.card-instruction:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .card-instruction__image {
   background-color: #68B738;
 }
