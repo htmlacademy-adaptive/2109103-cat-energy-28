@@ -1,3 +1,18 @@
+.questionnaire__button-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 533px;
+  }
+}
+
+.questionnaire__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .questionnaire__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

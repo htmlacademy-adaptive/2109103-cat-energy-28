@@ -1,5 +1,40 @@
 .example {
   background-color: #d2d2d2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #d2d2d2;
+  }
+}
+
+.example__text-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin: 0;
+  }
+}
+
+.example__results-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__common-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .example__title {
@@ -8,5 +43,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  color: #000000;
+}
+
+.example__sum {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
 }

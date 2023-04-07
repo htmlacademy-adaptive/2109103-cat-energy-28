@@ -1,11 +1,15 @@
 .card {
   padding: 21px 33px 18px 19px;
   background-color: #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 53px 52px;
+  }
 }
 
-.card:not(:last-child) {
-  margin-bottom: 20px;
-}
+// .card:not(:last-child) {
+//   margin-bottom: 20px;
+// }
 
 .card__title {
   font-family: "Oswald", "Arial", sans-serif;

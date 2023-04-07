@@ -4,12 +4,36 @@
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    height: 800px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 600px;
+  }
+}
+
+.main-hero__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .main-hero__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .main-hero__description {
@@ -17,4 +41,8 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
