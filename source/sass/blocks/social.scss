@@ -8,11 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     width: 1220px;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
