@@ -13,3 +13,13 @@
   font-size: 14px;
   line-height: 14px;
 }
+
+.list-extra__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-extra__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

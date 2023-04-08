@@ -1,1 +1,27 @@
 // стили для хедера
+.main-header {
+  display: flex;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    width: 708px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0;
+  }
+}
+
+.main-header__logo {
+  height: 65px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    height: 116px;
+  }
+}

@@ -1,3 +1,10 @@
+.card-instruction {
+  @media (min-width: $tablet-width) {
+    height: 280px;
+    width: 280px;
+  }
+}
+
 .card-instruction:not(:last-child) {
   margin-bottom: 20px;
 }

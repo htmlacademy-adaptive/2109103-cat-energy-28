@@ -10,4 +10,8 @@
 .site-list__item a {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
