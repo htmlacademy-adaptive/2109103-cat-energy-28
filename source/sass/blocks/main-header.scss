@@ -1,7 +1,10 @@
 // стили для хедера
 .main-header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -22,10 +25,11 @@
   height: 65px;
   display: flex;
   align-items: center;
-  text-align: center;
+  gap: 56px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    gap: 12px;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,17 +10,18 @@
 
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
+        <img class="logo-cat" src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
         <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <nav class="main-nav main-nav--closed">
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
