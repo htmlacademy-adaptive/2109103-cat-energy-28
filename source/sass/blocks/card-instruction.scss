@@ -1,14 +1,118 @@
 .card-instruction {
+  display: flex;
+  gap: 20px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     height: 280px;
-    width: 280px;
+    min-width: 230px;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-evenly;
+
+    &:nth-child(2n + 1) {
+      margin-right: 154px;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        content: "1";
+        position: absolute;
+        width: 112px;
+        color: #f2f2f2;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 280px;
+        line-height: 1;
+        z-index: -1;
+        left: 118px;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: "2";
+        position: absolute;
+        width: 112px;
+        color: #f2f2f2;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 280px;
+        line-height: 1;
+        z-index: -1;
+        left: 118px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        content: "3";
+        position: absolute;
+        width: 112px;
+        color: #f2f2f2;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 280px;
+        line-height: 1;
+        z-index: -1;
+        left: 118px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        content: "4";
+        position: absolute;
+        width: 112px;
+        color: #f2f2f2;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 280px;
+        line-height: 1;
+        z-index: -1;
+        left: 118px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 94px;
+    }
   }
 }
 
 .card-instruction:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .card-instruction__image {
+  display: block;
+  padding: 15px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 27px;
+  }
   background-color: #68b738;
+}
+
+.card-instruction__description {
+  margin: 0;
+  line-height: 1.29;
+  align-self: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    align-self: flex-start;
+  }
 }
