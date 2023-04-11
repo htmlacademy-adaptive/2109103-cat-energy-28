@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    flex-grow: 1;
   }
 }
 
@@ -45,20 +46,6 @@
   line-height: 1;
   text-transform: uppercase;
 
-  &--active {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 3px;
-      background: #68b738;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
@@ -69,10 +56,20 @@
     &:last-child {
       margin-right: 0;
     }
-  }
 
-  @media (min-width: $desktop-width) {
+    &--active {
+      position: relative;
 
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background: #68b738;
+      }
+    }
   }
 }
 
