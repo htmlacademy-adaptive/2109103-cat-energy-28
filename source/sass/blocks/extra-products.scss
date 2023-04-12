@@ -1,5 +1,9 @@
 .extra-products {
   margin-bottom: 54px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+  }
 }
 
 .extra-products__title {

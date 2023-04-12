@@ -15,6 +15,15 @@
   color: #444444;
   padding: 10px 93px;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
+  }
 }
 
 .more__title {

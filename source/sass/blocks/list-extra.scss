@@ -38,6 +38,11 @@
     padding-top: 26px;
     padding-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-grow: 1;
+  }
 }
 
 .list-extra__wrapper {

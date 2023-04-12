@@ -37,4 +37,8 @@
     text-align: left;
     padding: 71px 124px 69px 422px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 186px 61px 43px 58px;
+  }
 }

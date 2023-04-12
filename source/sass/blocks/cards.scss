@@ -52,6 +52,10 @@
     padding: 52px 20px;
     width: 280px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 205px;
+  }
 }
 
 .cards__item:last-child {
@@ -66,6 +70,14 @@
   font-size: 16px;
   padding: 10px 109px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+  }
 }
 
 .cards__inner-wrapper {

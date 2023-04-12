@@ -23,8 +23,6 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -43,5 +41,10 @@
     margin-bottom: 163px;
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 165px;
   }
 }
