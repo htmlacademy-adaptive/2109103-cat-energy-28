@@ -2,8 +2,23 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  background-color: transparent;
+  display: inline-block;
+  padding: 6px 47 4px 0;
+  border: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.button-product__go-to-icon {
+  position: absolute;
+  top: 5px;
+  right: -35px;
 }

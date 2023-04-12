@@ -1,9 +1,12 @@
 .catalog__wrapper {
-  width: 280px;
+  width: 87%;
+  max-width: 370px;
   margin: 0 auto;
 
+
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 92%;
+    max-width: 840px;
     margin: 0 auto;
   }
 
@@ -28,6 +31,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: #000000;
+  margin: 0;
+  margin-bottom: 49px;
 }

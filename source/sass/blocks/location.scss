@@ -5,19 +5,29 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .location__wrapper {
-  padding: 26px 20px;
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
-    width: 708px;
+    width: 92%;
+    max-width: 840px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
+}
+
+.location__address {
+  margin: 0;
 }

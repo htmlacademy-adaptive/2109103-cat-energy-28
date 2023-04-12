@@ -1,7 +1,20 @@
+.more {
+  display: flex;
+  flex-direction: column;
+}
+
+.more__icon {
+  align-self: center;
+  margin-bottom: 23px;
+}
+
 .more__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   background-color: #f2f2f2;
   color: #444444;
-  line-height: 20px;
+  padding: 10px 93px;
+  border: none;
 }
 
 .more__title {
@@ -11,5 +24,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #111111;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.more__description {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 21px;
 }

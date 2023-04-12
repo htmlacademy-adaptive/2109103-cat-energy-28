@@ -7,15 +7,19 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+  justify-self: start;
 }
 
 .cards__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -27,4 +31,32 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
   }
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 109px;
+  border: none;
+}
+
+.cards__inner-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 18px;
+}
+
+.cards__inner-wrapper img {
+  display: block;
+  align-self: center;
+  grid-row: 1 / -1;
 }

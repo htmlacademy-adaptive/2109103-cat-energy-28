@@ -1,4 +1,17 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-self: stretch;
+}
+
+.table__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .table__cell {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }

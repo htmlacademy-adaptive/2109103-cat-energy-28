@@ -9,6 +9,14 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.list-extra__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .extra-products__list {
