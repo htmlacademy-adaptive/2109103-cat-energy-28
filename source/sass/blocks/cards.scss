@@ -11,6 +11,13 @@
   color: #222222;
   margin: 0;
   justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .cards__list {
@@ -25,6 +32,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
+    row-gap: 141px;
+    justify-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +45,18 @@
 .cards__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    padding: 52px 20px;
+    width: 280px;
+  }
+}
+
+.cards__item:last-child {
+  background: none;
+  border: 2px solid #f2f2f2;
 }
 
 .cards__button {
@@ -53,10 +74,23 @@
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .cards__inner-wrapper img {
   display: block;
   align-self: center;
   grid-row: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    width: 168px;
+    height: 200px;
+    margin-top: -122px;
+  }
 }

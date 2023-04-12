@@ -3,15 +3,34 @@
   flex-direction: column;
   margin: 0;
   justify-self: stretch;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .table__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .table__cell {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+
+    &:not(:first-child) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
 }

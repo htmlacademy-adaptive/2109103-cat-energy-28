@@ -3,16 +3,24 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
   color: #222222;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .list-extra__product-price,
 .list-extra__product-quantity {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .list-extra__item {
@@ -21,11 +29,31 @@
   padding-top: 13px;
   padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+  }
+}
+
+.list-extra__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .list-extra__text-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+  }
 }
 
 

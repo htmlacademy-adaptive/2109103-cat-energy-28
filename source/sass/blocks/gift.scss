@@ -25,5 +25,16 @@
     top: 48px;
     right: 50%;
     transform: translateX(50%);
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 71px 124px 69px 422px;
   }
 }
