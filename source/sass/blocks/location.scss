@@ -1,8 +1,10 @@
 .location {
-  position: absolute;
-  z-index: 2;
-  transform: translateY(50%);
-  left: 7%;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 2;
+    transform: translateY(50%);
+    left: 7%;
+  }
 }
 
 .location__description {
