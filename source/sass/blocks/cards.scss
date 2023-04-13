@@ -46,21 +46,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 280px;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: #f2f2f2;
-    padding: 52px 20px;
-    width: 280px;
+    width: 324px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 205px;
+    padding: 0;
+    width: 100%;
   }
 }
 
 .cards__item:last-child {
-  background: none;
-  border: 2px solid #f2f2f2;
+  @media (min-width: $tablet-width) {
+    background: none;
+    border: 2px solid #f2f2f2;
+  }
 }
 
 .cards__button {
@@ -68,14 +75,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  padding: 10px 109px;
+  padding: 10px 110px;
   border: none;
+  grid-column: -1 / 1;
 
   @media (min-width: $tablet-width) {
     padding: 10px 93px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     padding: 10px 53px;
   }
 }
@@ -85,12 +94,22 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  margin-bottom: 18px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #ebebeb;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    padding: 52px 38px 38px 38px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 35px;
   }
 }
 

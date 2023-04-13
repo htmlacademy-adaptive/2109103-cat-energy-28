@@ -34,4 +34,10 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    // display: grid;
+    // grid-template-columns: 325px 243px 85px 245px;
+    // grid-template-rows: repeat(4, 74px);
+  }
 }
