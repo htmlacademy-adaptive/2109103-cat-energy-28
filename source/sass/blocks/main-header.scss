@@ -3,7 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px;
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {

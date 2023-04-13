@@ -1,9 +1,16 @@
 .radio-field {
-  margin-bottom: 46px;
+  padding-top: 24px;
+  padding-bottom: 19px;
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
 }
 
 .radio-field__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

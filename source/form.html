@@ -39,31 +39,41 @@
     <main class="container-form">
       <section class="questionnaire">
 
-        <h1 class="questionnaire__title">
-          Подбор программы
-        </h1>
-        <p class="questionnaire__description">
-          Заполните анкету, и мы подберем
-          программу питания для вашего кота
-        </p>
+        <div class="questionnaire__wrapper">
 
-        <div class="questionnaire__container">
-          <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="form-text__group field-group">
-              <label for="name">Имя:*</label>
-              <input class="field-group__text" name="name" id="name" type="text" placeholder="Барсик" required>
-            </p>
-            <p class="form-text__field-group field-group">
-              <label for="weight">Вес (кг):*</label>
-              <input class="field-group__text" name="weight" id="weight" type="text" placeholder="7" required>
-            </p>
-            <p class="form-text__field-group field-group">
-              <label for="age">Возраст (лет):</label>
-              <input class="field-group__text" name="age" id="age" type="text" placeholder="7">
-            </p>
-          </form>
+          <h1 class="questionnaire__title">
+            Подбор программы
+          </h1>
+          <p class="questionnaire__description">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+
+          <div class="questionnaire__container">
+
+            <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="form-text__group field-group">
+                <label class="field-group__name" for="name">Имя:*</label>
+                <input class="field-group__text field-group__text--name" name="name" id="name" type="text" placeholder="Барсик" required>
+              </p>
+              <p class="form-text__field-group field-group">
+                <label class="field-group__weight" for="weight">Вес (кг):*</label>
+                <input class="field-group__text field-group__text--weight" name="weight" id="weight" type="text" placeholder="7" required>
+              </p>
+              <p class="form-text__field-group field-group">
+                <label class="field-group__age" for="age">Возраст (лет):</label>
+                <input class="field-group__text field-group__text--age" name="age" id="age" type="text" placeholder="7">
+              </p>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="questionnaire__radio-wrapper">
 
           <div class="questionnaire__radio radio-field">
+
             <h2 class="visually-hidden">Цель программы.</h2>
             <ul class="radio-field__list">
 
@@ -101,7 +111,9 @@
               </li>
 
             </ul>
+
           </div>
+
         </div>
 
         <div class="contact-info">

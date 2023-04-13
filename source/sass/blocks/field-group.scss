@@ -1,6 +1,23 @@
 .field-group {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.field-group__text {
+  width: 100%;
+  padding: 14px 20px;
+}
+
+.field-group__weight {
+  width: 35%;
+}
+
+.field-group__age {
+  width: 60%;
 }
 
 .field-group__text::placeholder {
