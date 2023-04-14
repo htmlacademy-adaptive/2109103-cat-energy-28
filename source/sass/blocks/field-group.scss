@@ -10,17 +10,48 @@
 .field-group__text {
   width: 100%;
   padding: 14px 20px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 20px;
+  }
+}
+
+.field-group__name {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-group__weight {
   width: 35%;
+
+  @media (min-width: $tablet-width) {
+    width: 15%;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 17%;
+  }
 }
 
 .field-group__age {
   width: 60%;
+
+  @media (min-width: $tablet-width) {
+    width: 26%;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+  }
 }
 
 .field-group__text::placeholder {
-  font-family: inherit;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
   text-transform: uppercase;
 }

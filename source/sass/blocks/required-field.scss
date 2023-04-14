@@ -2,6 +2,17 @@
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: self-start;
+  }
 }

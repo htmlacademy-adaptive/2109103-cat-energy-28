@@ -37,19 +37,24 @@
     </header>
 
     <main class="container-form">
+
       <section class="questionnaire">
 
-        <div class="questionnaire__wrapper">
+        <div class="questionnaire__header-wrapper">
 
           <h1 class="questionnaire__title">
             Подбор программы
           </h1>
           <p class="questionnaire__description">
-            Заполните анкету, и мы подберем
+            Заполните анкету, и мы подберем<br>
             программу питания для вашего кота
           </p>
 
-          <div class="questionnaire__container">
+        </div>
+
+        <div class="questionnaire__wrapper">
+
+          <div class="questionnaire__info-container">
 
             <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
               <p class="form-text__group field-group">
@@ -67,10 +72,6 @@
             </form>
 
           </div>
-
-        </div>
-
-        <div class="questionnaire__radio-wrapper">
 
           <div class="questionnaire__radio radio-field">
 
@@ -117,8 +118,9 @@
         </div>
 
         <div class="contact-info">
+
           <h2 class="contact-info__title">Контактные данные (владельца кота)</h2>
-          <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="questionnaire__form form-text form-text--row" action="https://echo.htmlacademy.ru/" method="post">
             <p class="form-text__group field-group">
               <label for="mail">E-mail:*</label>
               <input class="field-group__text" name="mail" id="mail" type="email" placeholder="kuklachev@gmail.com" required>
@@ -150,7 +152,7 @@
               <li class="extra__item">
                 <label class="extra__control control">
                   <input  class="visually-hidden control__input" type="checkbox" checked>
-                  <span class="control__mark control__mark--round">
+                  <span class="control__mark">
                   </span>
                   <span class="control__label">
                     Сахарозаменитель
@@ -161,7 +163,7 @@
               <li class="extra__item">
                 <label class="extra__control control">
                   <input  class="visually-hidden control__input" type="checkbox">
-                  <span class="control__mark control__mark--round">
+                  <span class="control__mark">
                   </span>
                   <span class="control__label">
                     Питьевая вода
@@ -172,7 +174,7 @@
               <li class="extra__item">
                 <label class="extra__control control">
                   <input  class="visually-hidden control__input" type="checkbox">
-                  <span class="control__mark control__mark--round">
+                  <span class="control__mark">
                   </span>
                   <span class="control__label">
                     Молоко
@@ -183,7 +185,7 @@
               <li class="extra__item">
                 <label class="extra__control control">
                   <input  class="visually-hidden control__input" type="checkbox">
-                  <span class="control__mark control__mark--round">
+                  <span class="control__mark">
                   </span>
                   <span class="control__label">
                     Витамины
@@ -207,7 +209,7 @@
 
       <div class="main-footer__wrapper">
 
-        <div class="main-footer__location location">
+        <div class="main-footer__location location location--form">
 
           <div class="location__wrapper">
 

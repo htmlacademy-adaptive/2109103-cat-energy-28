@@ -3,4 +3,21 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form-text--row {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 78px;
+  }
 }
