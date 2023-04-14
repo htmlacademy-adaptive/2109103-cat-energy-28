@@ -3,16 +3,19 @@
 }
 
 .explainer__wrapper {
-  width: 280px;
+  width: 87%;
+  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 92%;
+    max-width: 834px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 85%;
+    max-width: 1700px;
     margin: 0 auto;
   }
 }

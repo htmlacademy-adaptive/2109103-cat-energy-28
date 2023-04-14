@@ -42,7 +42,8 @@
 
 .main-hero__wrapper {
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 92%;
+    max-width: 834px;
     margin: 0 auto;
   }
 

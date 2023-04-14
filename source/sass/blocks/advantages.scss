@@ -9,7 +9,8 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    width: 708px;
+    width: 92%;
+    max-width: 834px;
     margin: 0 auto;
   }
 
@@ -17,7 +18,8 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
-    width: 1220px;
+    width: 85%;
+    max-width: 1700px;
     margin: 0 auto;
   }
 }
