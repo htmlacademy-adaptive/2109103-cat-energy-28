@@ -1,5 +1,9 @@
 .explainer {
   margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 205px;
+  }
 }
 
 .explainer__wrapper {
@@ -36,6 +40,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
