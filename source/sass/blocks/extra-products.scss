@@ -3,7 +3,19 @@
 }
 
 .extra-products__wrapper {
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 834px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 100%;
+    max-width: fit-content;
     display: flex;
     gap: 80px;
   }
@@ -16,10 +28,14 @@
   font-size: 24px;
   line-height: 1;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 36px;
+  display: block;
+  width: 87%;
+
 
   @media (min-width: $tablet-width) {
+    width: auto;
     font-size: 36px;
     margin-bottom: 80px;
   }
