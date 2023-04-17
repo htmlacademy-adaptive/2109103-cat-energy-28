@@ -58,10 +58,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 896px;
-    padding-top: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 325px 243px 85px 245px;
+    padding-top: 17px;
     padding-bottom: 17px;
   }
 }
