@@ -96,9 +96,16 @@
     min-height: 20vh;
     background-color: #ffffff;
   }
+}
 
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    width: 100%;
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    @media (min-width: $mobile-width-only) {
+      position: static;
+    }
   }
 }
