@@ -3,10 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 87%;
-  max-width: 370px;
   margin: 0 auto;
-  position: relative;
+
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -30,10 +28,16 @@
   display: flex;
   align-items: center;
   gap: 56px;
+  width: 87%;
+  margin: 0 auto;
+  max-width: 370px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 52px;
     gap: 12px;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

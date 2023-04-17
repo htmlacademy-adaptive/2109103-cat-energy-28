@@ -11,7 +11,7 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: #ffffff;
+  background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
@@ -25,7 +25,7 @@
   content: "";
   position: absolute;
   top: 24px;
-  right: 20px;
+  right: 25%;
   width: 24px;
   height: 2px;
   background-color: #000000;
@@ -44,8 +44,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: -35px;
+    right: 25%;
     width: 24px;
     height: 2px;
     background-color: #000000;
@@ -90,7 +90,7 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 66px;
+    top: 65px;
     right: 0;
     z-index: 10;
     min-height: 20vh;
