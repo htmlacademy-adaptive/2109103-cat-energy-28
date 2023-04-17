@@ -24,10 +24,12 @@
   }
 }
 
-.explainer__card-wrapper {
+.explainer__list {
   display: flex;
   flex-direction: column;
-
+  margin: 0;
+  padding: 0;
+  counter-reset: number 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

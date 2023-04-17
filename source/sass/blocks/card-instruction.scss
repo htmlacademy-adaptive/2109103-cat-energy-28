@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   position: relative;
+  counter-increment: number;
 
   @media (min-width: $tablet-width) {
     height: 280px;
@@ -14,60 +15,16 @@
       margin-right: 154px;
     }
 
-    &:nth-child(1) {
-      &::before {
-        content: "1";
-        position: absolute;
-        width: 112px;
-        color: #f2f2f2;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 280px;
-        line-height: 1;
-        z-index: -1;
-        left: 118px;
-      }
-    }
-
-    &:nth-child(2) {
-      &::before {
-        content: "2";
-        position: absolute;
-        width: 112px;
-        color: #f2f2f2;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 280px;
-        line-height: 1;
-        z-index: -1;
-        left: 118px;
-      }
-    }
-
-    &:nth-child(3) {
-      &::before {
-        content: "3";
-        position: absolute;
-        width: 112px;
-        color: #f2f2f2;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 280px;
-        line-height: 1;
-        z-index: -1;
-        left: 118px;
-      }
-    }
-
-    &:nth-child(4) {
-      &::before {
-        content: "4";
-        position: absolute;
-        width: 112px;
-        color: #f2f2f2;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 280px;
-        line-height: 1;
-        z-index: -1;
-        left: 118px;
-      }
+    &::before {
+      content: counter(number);
+      position: absolute;
+      width: 112px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+      z-index: -1;
+      left: 118px;
     }
   }
 
