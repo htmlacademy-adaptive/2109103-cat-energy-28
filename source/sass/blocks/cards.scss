@@ -77,7 +77,6 @@
   font-size: 16px;
   padding: 10px 110px;
   border: none;
-  grid-column: -1 / 1;
 
   @media (min-width: $tablet-width) {
     padding: 10px 93px;
@@ -115,7 +114,6 @@
 .cards__inner-wrapper img {
   display: block;
   align-self: center;
-  grid-row: 1 / -1;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;
