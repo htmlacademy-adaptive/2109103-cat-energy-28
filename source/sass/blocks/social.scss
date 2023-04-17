@@ -1,6 +1,9 @@
 .social__wrapper {
   display: flex;
   flex-direction: column;
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 92%;

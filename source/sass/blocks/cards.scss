@@ -26,6 +26,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 33px;
 
   @media (min-width: $tablet-width) {
@@ -77,8 +78,11 @@
   font-size: 16px;
   padding: 10px 110px;
   border: none;
+  grid-column: -1 / 1;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     padding: 10px 93px;
   }
 
@@ -114,6 +118,7 @@
 .cards__inner-wrapper img {
   display: block;
   align-self: center;
+  grid-row: -1 / 1;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;

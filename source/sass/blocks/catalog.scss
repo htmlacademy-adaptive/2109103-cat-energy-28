@@ -1,3 +1,7 @@
+.catalog {
+  border-top: 1px solid #ebebeb;
+}
+
 .catalog__wrapper {
   width: 87%;
   max-width: 370px;
@@ -34,7 +38,8 @@
   line-height: 1;
   color: #000000;
   margin: 0;
-  margin-bottom: 49px;
+  padding-top: 27px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-top: 63px;
