@@ -17,19 +17,18 @@
 
       <nav class="main-nav main-nav--closed">
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -59,15 +58,15 @@
 
             <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
               <p class="form-text__group field-group">
-                <label class="field-group__name" for="name">Имя:*</label>
+                <label class="field-group__label" for="name">Имя:*</label>
                 <input class="field-group__text field-group__text--name" name="name" id="name" type="text" placeholder="Барсик" required>
               </p>
               <p class="form-text__field-group field-group">
-                <label class="field-group__weight" for="weight">Вес (кг):*</label>
+                <label class="field-group__label" for="weight">Вес (кг):*</label>
                 <input class="field-group__text field-group__text--weight" name="weight" id="weight" type="text" placeholder="7" required>
               </p>
               <p class="form-text__field-group field-group">
-                <label class="field-group__age" for="age">Возраст (лет):</label>
+                <label class="field-group__label" for="age">Возраст (лет):</label>
                 <input class="field-group__text field-group__text--age" name="age" id="age" type="text" placeholder="7">
               </p>
             </form>
@@ -123,11 +122,11 @@
           <h2 class="contact-info__title">Контактные данные (владельца кота)</h2>
           <form class="questionnaire__form form-text form-text--row" action="https://echo.htmlacademy.ru/" method="post">
             <p class="form-text__group field-group">
-              <label for="mail">E-mail:*</label>
+              <label class="field-group__label" for="mail">E-mail:*</label>
               <input class="field-group__text" name="mail" id="mail" type="email" placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="form-text__field-group field-group">
-              <label for="phone">Телефон:*</label>
+              <label class="field-group__label" for="phone">Телефон:*</label>
               <input class="field-group__text" name="phone" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
             </p>
           </form>

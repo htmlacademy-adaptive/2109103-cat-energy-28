@@ -17,16 +17,15 @@
 
       <nav class="main-nav main-nav--closed">
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#">Главная</a>
-            </li>
             <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
               <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
@@ -91,9 +90,9 @@
                 </dl>
 
 
-              <button class="cards__button button" type="button">
+              <a class="cards__button button" href="form.html">
                 Заказать
-              </button>
+              </a>
 
               </div>
             </li>
@@ -141,9 +140,9 @@
 
                 </dl>
 
-              <button class="cards__button button" type="button">
+              <a class="cards__button button" href="form.html">
                 Заказать
-              </button>
+              </a>
 
               </div>
             </li>
@@ -191,9 +190,9 @@
 
                 </dl>
 
-              <button class="cards__button button" type="button">
+              <a class="cards__button button" href="form.html">
                 Заказать
-              </button>
+              </a>
 
               </div>
 
@@ -242,9 +241,9 @@
 
                 </dl>
 
-              <button class="cards__button button" type="button">
+              <a class="cards__button button" href="form.html">
                 Заказать
-              </button>
+              </a>
 
               </div>
             </li>
@@ -292,9 +291,9 @@
 
                 </dl>
 
-                <button class="cards__button button" type="button">
+                <a class="cards__button button" href="form.html">
                   Заказать
-                </button>
+                </a>
 
               </div>
             </li>
@@ -342,9 +341,9 @@
 
                 </dl>
 
-              <button class="cards__button button" type="button">
+              <a class="cards__button button" href="form.html">
                 Заказать
-              </button>
+              </a>
 
               </div>
             </li>
@@ -392,9 +391,9 @@
 
                 </dl>
 
-                <button class="cards__button button" type="button">
+                <a class="cards__button button" href="form.html">
                   Заказать
-                </button>
+                </a>
 
               </div>
             </li>
@@ -414,9 +413,9 @@
                   <p class="more__description">На самом деле вкусов<br>гораздо больше!</p>
 
                 </div>
-                <button class="more__button button" type="button">
+                <a class="more__button button" href="form.html">
                   Показать все
-                </button>
+                </a>
 
               </div>
 
@@ -431,63 +430,64 @@
           <section class="extra-products">
 
             <h2 class="extra-products__title">Дополнительные товары</h2>
-            <ul class="extra-products__list list-extra">
 
-              <li class="list-extra__item">
-                <div class="list-extra__wrapper">
-                  <h3 class="list-extra__title">Сахарозаменитель</h3>
-                  <div class="list-extra__text-wrapper">
-                    <span class="list-extra__product-quantity">1 упаковка (100 г)</span>
-                    <span class="list-extra__product-price">200 ₽</span>
-                  </div>
-                </div>
-                <button class="list-extra__button button" type="button">Заказать</button>
-              </li>
+            <div class="extra-products__wrapper">
 
-              <li class="list-extra__item">
-                <div class="list-extra__wrapper">
-                  <h3 class="list-extra__title">Питьевая вода</h3>
-                  <div class="list-extra__text-wrapper">
-                    <span class="list-extra__product-quantity">5 литров</span>
-                    <span class="list-extra__product-price">50 ₽</span>
-                  </div>
-                </div>
-                <button class="list-extra__button button" type="button">Заказать</button>
-              </li>
+              <ul class="extra-products__list list-extra">
 
-              <li class="list-extra__item">
-                <div class="list-extra__wrapper">
-                  <h3 class="list-extra__title">Молоко</h3>
-                  <div class="list-extra__text-wrapper">
-                    <span class="list-extra__product-quantity">1 литр</span>
-                    <span class="list-extra__product-price">100 ₽</span>
-                  </div>
-                </div>
-                <button class="list-extra__button button" type="button">Заказать</button>
-              </li>
+                <li class="list-extra__item">
 
-              <li class="list-extra__item">
-                <div class="list-extra__wrapper">
-                  <h3 class="list-extra__title">Витамины</h3>
-                  <div class="list-extra__text-wrapper">
-                    <span class="list-extra__product-quantity">1 упаковка (30 г)</span>
-                    <span class="list-extra__product-price">300 ₽</span>
-                  </div>
-                </div>
-                <button class="list-extra__button button" type="button">Заказать</button>
-              </li>
+                    <h3 class="list-extra__title">Сахарозаменитель</h3>
 
-            </ul>
+                      <span class="list-extra__product-quantity">1 упаковка (100 г)</span>
+                      <span class="list-extra__product-price">200 ₽</span>
 
-          </section>
+                  <a class="list-extra__button button" href="form.html">Заказать</a>
+                </li>
 
-          <section class="gift">
-            <h2 class="visually-hidden">Подарок за заказ.</h2>
-            <p class="gift__description">
-              Закажите все
-              и получите чехол для
-              кота в подарок!
-            </p>
+                <li class="list-extra__item">
+
+                    <h3 class="list-extra__title">Питьевая вода</h3>
+
+                      <span class="list-extra__product-quantity">5 литров</span>
+                      <span class="list-extra__product-price">50 ₽</span>
+
+                  <a class="list-extra__button button" href="form.html">Заказать</a>
+                </li>
+
+                <li class="list-extra__item">
+
+                    <h3 class="list-extra__title">Молоко</h3>
+
+                      <span class="list-extra__product-quantity">1 литр</span>
+                      <span class="list-extra__product-price">100 ₽</span>
+
+                  <a class="list-extra__button button" href="form.html">Заказать</a>
+                </li>
+
+                <li class="list-extra__item">
+
+                    <h3 class="list-extra__title">Витамины</h3>
+
+                      <span class="list-extra__product-quantity">1 упаковка (30 г)</span>
+                      <span class="list-extra__product-price">300 ₽</span>
+
+                  <a class="list-extra__button button" href="form.html">Заказать</a>
+                </li>
+
+              </ul>
+
+              <div class="gift">
+                <h2 class="visually-hidden">Подарок за заказ.</h2>
+                <p class="gift__description">
+                  Закажите все<br>
+                  и получите чехол для<br>
+                  кота в подарок!
+                </p>
+              </div>
+
+            </div>
+
           </section>
 
         </div>

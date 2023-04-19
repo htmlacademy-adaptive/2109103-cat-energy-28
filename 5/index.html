@@ -17,11 +17,10 @@
 
       <nav class="main-nav main-nav--closed">
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#">Главная</a>
@@ -106,45 +105,45 @@
             Как это работает
           </h2>
 
-          <div class="explainer__card-wrapper">
+          <ul class="explainer__list">
 
-            <div class="explainer__card card-instruction">
+            <li class="explainer__card card-instruction">
               <img class="card-instruction__image" src="img/card-instruction/card-instruction-leaf.svg" alt="Питательные вещества." width="25" height="28">
               <p class="card-instruction__description">
                 Функциональное питание<br>
                 содержит только полезные<br>
                 питательные вещества.
               </p>
-            </div>
+            </li>
 
-            <div class="explainer__card card-instruction">
+            <li class="explainer__card card-instruction">
               <img class="card-instruction__image" src="img/card-instruction/card-instruction-powder.svg" alt="Питательные вещества." width="26" height="29">
               <p class="card-instruction__description">
                 Выпускается в виде порошка,<br>
                 который нужно лишь залить<br>
                 кипятком и готово.
               </p>
-            </div>
+            </li>
 
-            <div class="explainer__card card-instruction">
+            <li class="explainer__card card-instruction">
               <img class="card-instruction__image" src="img/card-instruction/card-instruction-eat.svg" alt="Питательные вещества." width="25" height="30">
               <p class="card-instruction__description">
                 Замените один-два приема<br>
                 обычной еды на наше<br>
                 функциональное питание.
               </p>
-            </div>
+            </li>
 
-            <div class="explainer__card card-instruction">
+            <li class="explainer__card card-instruction">
               <img class="card-instruction__image" src="img/card-instruction/card-instruction-time.svg" alt="Питательные вещества." width="26" height="31">
               <p class="card-instruction__description">
                 Уже через месяц<br>
                 наслаждайтесь изменениями<br>
                 к лучшему вашего питомца!
               </p>
-            </div>
+            </li>
 
-          </div>
+          </ul>
 
         </div>
 
@@ -196,8 +195,10 @@
           </div>
 
           <div class="example__slider slider">
-            <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Кот до." width="280" height="256">
-            <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Кот после." width="280" height="256">
+            <div class="slider__wrapper">
+              <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Кот до." width="280" height="256">
+              <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Кот после." width="280" height="256">
+            </div>
           </div>
 
         </div>
