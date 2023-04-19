@@ -3,23 +3,115 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .list-extra__product-price,
 .list-extra__product-quantity {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.list-extra__product-price {
+  grid-column: 1;
+  grid-row: 2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
+}
+
+.list-extra__product-quantity {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    justify-self: start;
+  }
 }
 
 .list-extra__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 26px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    grid-template-columns: 325px 243px 85px 245px;
+    grid-template-rows: 1fr;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+.list-extra__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .list-extra__text-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+  }
+}
+
+.list-extra__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 10px 109px;
+  font-size: 16px;
+  border: none;
+  grid-column: -1 / 1;
+
+  @media (min-width: $desktop-width) {
+    width: 192px;
+    padding: 7px 26px;
+    grid-column: 4;
+  }
 }

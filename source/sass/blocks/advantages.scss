@@ -1,15 +1,23 @@
 .advantages {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 87%;
+  max-width: 370px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    width: 708px;
+    width: 92%;
+    max-width: 834px;
     margin: 0 auto;
   }
 
@@ -17,7 +25,8 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
-    width: 1220px;
+    width: 85%;
+    max-width: 1700px;
     margin: 0 auto;
   }
 }

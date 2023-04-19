@@ -1,3 +1,7 @@
+.control {
+  position: relative;
+}
+
 .control__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -6,4 +10,48 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  padding-left: 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.control__mark {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid #cdcdcd;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  top: 30%;
+  transform: translateX(65%);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tick.svg");
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+
+.control__mark--round {
+  border-radius: 50%;
 }
