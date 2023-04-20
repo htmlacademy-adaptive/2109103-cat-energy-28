@@ -10,8 +10,16 @@
 
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img class="logo-cat" src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
-        <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" widt="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="49">
+          <img class="logo-cat" src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-name-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-name-tablet.svg">
+          <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
+        </picture>
       </a>
 
       <nav class="main-nav main-nav--closed">
@@ -46,6 +54,9 @@
           <p class="main-hero__description">
             Занялся собой? Займись котом!
           </p>
+
+          <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
+
           <button class="main-hero__button button" type="button">
             Подобрать программу
           </button>

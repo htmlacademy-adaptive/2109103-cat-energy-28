@@ -1,4 +1,8 @@
 .logo-cat {
   width: 33px;
   height: 65px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

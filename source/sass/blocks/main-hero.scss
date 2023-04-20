@@ -1,12 +1,16 @@
 .main-hero {
-  background-image: url("../img/hero-background-cat.jpg");
+  background: url("../img/hero-background-cat.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100%;
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 20px;
-  padding: 27px 35px 164px 35px;
+  padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-cat-x2.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -43,6 +47,10 @@
 }
 
 .main-hero__wrapper {
+  width: 87%;
+  margin: 0 auto;
+  max-width: 370px;
+
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 834px;
@@ -79,6 +87,7 @@
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -86,4 +95,11 @@
     text-align: left;
     margin-bottom: 49px;
   }
+}
+
+.main-hero__image {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
 }
