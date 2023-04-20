@@ -3,6 +3,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-gift-x2.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-gift-tablet-x2.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/background-gift-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-gift-desktop-x2.jpg");
+    }
+  }
 }
 
 .gift__description {

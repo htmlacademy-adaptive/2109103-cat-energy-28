@@ -35,6 +35,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .explainer__title {

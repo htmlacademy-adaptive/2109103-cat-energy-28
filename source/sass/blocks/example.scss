@@ -49,7 +49,8 @@
 .example__common-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 1220px;
+    width: 85%;
+    max-width: 1700px;
     margin: 0 auto;
   }
 }
