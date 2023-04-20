@@ -32,6 +32,8 @@
   margin: 0 auto;
   max-width: 370px;
   position: relative;
+  margin-right: auto;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     height: 52px;

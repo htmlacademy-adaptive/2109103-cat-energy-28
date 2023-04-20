@@ -32,10 +32,12 @@
   margin-bottom: 36px;
   display: block;
   width: 87%;
+  max-width: 370px;
 
 
   @media (min-width: $tablet-width) {
     width: auto;
+    max-width: 100%;
     font-size: 36px;
     margin-bottom: 80px;
   }
