@@ -44,11 +44,12 @@
     </header>
 
     <main class="main-container">
-      <section class="main-hero">
 
-        <div class="main-hero__wrapper">
+      <div class="main-container__wrapper">
 
-          <div class="main-hero__text-wrapper">
+        <section class="main-hero">
+
+          <div class="main-hero__wrapper">
 
             <h1 class="main-hero__title">
               Функциональное<br>питание для котов
@@ -57,20 +58,26 @@
               Занялся собой? Займись котом!
             </p>
 
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.png 1x, img/hero-background-product-desktop-x2.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.png 1x, img/hero-background-product-tablet-x2.png 2x" width="708" height="609">
+              <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
+            </picture>
+
+            <div class="main-hero__button-wrapper">
+
+              <button class="main-hero__button button" type="button">
+                Подобрать программу
+              </button>
+
+            </div>
+
           </div>
 
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.png 1x, img/hero-background-product-desktop-x2.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.png 1x, img/hero-background-product-tablet-x2.png 2x" width="700" height="609">
-            <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
-          </picture>
-          <button class="main-hero__button button" type="button">
-            Подобрать программу
-          </button>
+        </section>
 
-        </div>
+      </div>
 
-      </section>
       <section class="advantages">
 
         <div class="advantages__wrapper">

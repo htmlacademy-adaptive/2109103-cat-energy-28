@@ -1,1 +1,9 @@
 // стили контейнера основной страницы
+.main-container__wrapper {
+  @media (min-width: $desktop-width) {
+    background: url("../img/hero-background-cat-desktop.jpg"), rgba(104, 183, 56, 0.83);
+    background-repeat: no-repeat;
+    background-position: 182% 0, 180% 0;
+    background-blend-mode: normal;
+  }
+}

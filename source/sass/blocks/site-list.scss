@@ -68,6 +68,10 @@
         left: 0;
         height: 3px;
         background: #68b738;
+
+        @media (min-width: $desktop-width) {
+          background: #ffffff;
+        }
       }
     }
   }

@@ -15,7 +15,9 @@
   @media (min-width: $tablet-width) {
     background-image: none;
     padding: 0;
+    margin: 0 auto;
     margin-top: 62px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +29,7 @@
     height: 600px;
     margin-bottom: 82px;
     align-items: center;
+    padding-top: 50px;
   }
 }
 
@@ -45,7 +48,10 @@
     padding: 14px 26px;
     width: 244px;
     top: 226px;
-    right: 48%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
   }
 }
 
@@ -53,12 +59,13 @@
   width: 87%;
   margin: 0 auto;
   max-width: 370px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 834px;
     margin: 0 auto;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +82,18 @@
   }
 }
 
+.main-hero__button-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 65%;
+    max-width: 834px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .main-hero__title {
   font-weight: 400;
   font-size: 36px;
@@ -84,10 +103,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 834px;
     color: #000000;
     font-size: 60px;
     text-align: left;
     margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -98,13 +124,19 @@
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
-  // position: relative;
 
   @media (min-width: $tablet-width) {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 834px;
     color: #000000;
     font-size: 20px;
     text-align: left;
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -115,7 +147,13 @@
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 708px;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+    left: 35%;
   }
 }
