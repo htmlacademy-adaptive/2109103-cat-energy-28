@@ -10,8 +10,16 @@
 
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img class="logo-cat" src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
-        <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" widt="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="49">
+          <img class="logo-cat" src="img/logo-cat.svg" alt="Логотип «Кэт Энерджи»." width="34" height="38">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-name-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-name-tablet.svg">
+          <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
+        </picture>
       </a>
 
       <nav class="main-nav main-nav--closed">
@@ -49,7 +57,7 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.png 1x, img/catalog/energy-chicken-small-desktop-x2.png 2x" width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.png 1x, img/catalog/energy-chicken-small-desktop-x2.png 2x">
                   <img class="cards__image cards__image--small" src="img/catalog/energy-chicken-small.png" srcset="img/catalog/energy-chicken-small-x2.png 2x" alt="Кэт Энерджи с курицей маленький." width="68" height="86">
                 </picture>
 
@@ -104,8 +112,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-big-desktop.png 1x, img/catalog/energy-chicken-big-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-chicken-big.png" srcset="img/catalog/energy-chicken-big-x2.png 2x" alt="Кэт Энерджи с курицей большой." width="84" height="100">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-big-desktop.png 1x, img/catalog/energy-chicken-big-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--big" src="img/catalog/energy-chicken-big.png" srcset="img/catalog/energy-chicken-big-x2.png 2x" alt="Кэт Энерджи с курицей большой." width="84" height="100">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>PRO 1000 г</h2>
                 <dl class="cards__table table">
@@ -157,8 +165,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-fish-small-desktop.png 1x, img/catalog/energy-fish-small-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-fish-small.png" srcset="img/catalog/energy-fish-small-x2.png 2x" alt="Кэт Энерджи с рыбой маленький." width="68" height="78">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-fish-small-desktop.png 1x, img/catalog/energy-fish-small-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--small" src="img/catalog/energy-fish-small.png" srcset="img/catalog/energy-fish-small-x2.png 2x" alt="Кэт Энерджи с рыбой маленький." width="68" height="78">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>PRO 500 г</h2>
                 <dl class="cards__table table">
@@ -211,8 +219,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-fish-big-desktop.png 1x, img/catalog/energy-fish-big-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-fish-big.png" srcset="img/catalog/energy-fish-big-x2.png 2x" alt="Кэт Энерджи с рыбой большой." width="84" height="100">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-fish-big-desktop.png 1x, img/catalog/energy-fish-big-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--big" src="img/catalog/energy-fish-big.png" srcset="img/catalog/energy-fish-big-x2.png 2x" alt="Кэт Энерджи с рыбой большой." width="84" height="100">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>PRO 1000 г</h2>
                 <dl class="cards__table table">
@@ -264,8 +272,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-buckwheat-small-desktop.png 1x, img/catalog/energy-buckwheat-small-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-buckwheat-small.png" srcset="img/catalog/energy-buckwheat-small-x2 2x" alt="Кэт Энерджи с гречкой маленький." width="68" height="78">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-buckwheat-small-desktop.png 1x, img/catalog/energy-buckwheat-small-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--small" src="img/catalog/energy-buckwheat-small.png" srcset="img/catalog/energy-buckwheat-small-x2 2x" alt="Кэт Энерджи с гречкой маленький." width="68" height="78">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>SLIM 500 г</h2>
                 <dl class="cards__table table">
@@ -317,8 +325,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-buckwheat-big-desktop.png 1x, img/catalog/energy-buckwheat-big-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-buckwheat-big.png" srcset="img/catalog/energy-buckwheat-big-desktop-x2 2x" alt="Кэт Энерджи с гречкой большой." width="84" height="100">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-buckwheat-big-desktop.png 1x, img/catalog/energy-buckwheat-big-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--big" src="img/catalog/energy-buckwheat-big.png" srcset="img/catalog/energy-buckwheat-big-desktop-x2 2x" alt="Кэт Энерджи с гречкой большой." width="84" height="100">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>SLIM 1000 г</h2>
                 <dl class="cards__table table">
@@ -370,8 +378,8 @@
               <div class="cards__inner-wrapper">
 
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog/energy-rice-small-desktop.png 1x, img/catalog/energy-rice-small-desktop-x2.png 2x" width="161" height="172">
-                  <img src="img/catalog/energy-rice-small.png" srcset="img/catalog/energy-rice-small-desktop-x2 2x" alt="Кэт Энерджи с рисом маленький." width="72" height="84">
+                  <source media="(min-width: 768px)" srcset="img/catalog/energy-rice-small-desktop.png 1x, img/catalog/energy-rice-small-desktop-x2.png 2x">
+                  <img class="cards__image cards__image--small" src="img/catalog/energy-rice-small.png" srcset="img/catalog/energy-rice-small-desktop-x2 2x" alt="Кэт Энерджи с рисом маленький." width="72" height="84">
                 </picture>
                 <h2 class="cards__title">Cat Energy<br>PRO 500 г</h2>
                 <dl class="cards__table table">
