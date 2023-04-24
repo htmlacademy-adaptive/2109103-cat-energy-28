@@ -2,4 +2,9 @@
 .logo-name {
   width: 101px;
   height: 65px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
