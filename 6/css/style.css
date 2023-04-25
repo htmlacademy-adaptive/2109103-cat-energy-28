@@ -33,6 +33,15 @@
   overflow: hidden;
 }
 
+.logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
+}
+
 .advantages {
   margin-bottom: 20px;
 }
@@ -1307,9 +1316,26 @@
   }
 }
 
+.logo-cat {
+  width: 33px;
+  height: 65px;
+  margin-right: 20%;
+}
+@media (min-width: 768px) {
+  .logo-cat {
+    display: none;
+  }
+}
+
 .logo-name {
   width: 101px;
   height: 65px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .logo-name {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1390,7 +1416,6 @@
   height: 65px;
   display: flex;
   align-items: center;
-  gap: 56px;
   width: 87%;
   margin: 0 auto;
   max-width: 370px;
