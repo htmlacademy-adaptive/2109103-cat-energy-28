@@ -20,6 +20,19 @@
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 18px 20px;
   }
