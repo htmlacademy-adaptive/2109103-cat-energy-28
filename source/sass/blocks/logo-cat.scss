@@ -1,9 +1,9 @@
 .logo-cat {
   width: 33px;
   height: 65px;
-  margin-right: 20%;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 174px;
+    height: 51px;
   }
 }
