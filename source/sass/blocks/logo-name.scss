@@ -4,6 +4,14 @@
   height: 65px;
   margin-left: 20%;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -11,4 +19,8 @@
 
 .logo-name--footer {
   margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
