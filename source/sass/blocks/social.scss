@@ -4,6 +4,8 @@
   width: 87%;
   max-width: 370px;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 92%;
@@ -11,6 +13,7 @@
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +38,15 @@
 .social__icon {
   display: inline-block;
   padding: 10px;
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon:not(:last-child) {

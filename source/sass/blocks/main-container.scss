@@ -1,1 +1,24 @@
 // стили контейнера основной страницы
+.main-container__wrapper {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-background-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50vw 0;
+    background-size: contain;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-cat-desktop-x2.jpg");
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: rgba(104, 183, 56, 0.83);
+      width: 50%;
+      height: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+}

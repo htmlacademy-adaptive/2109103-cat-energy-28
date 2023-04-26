@@ -118,8 +118,7 @@
   }
 }
 
-.cards__inner-wrapper img {
-  display: block;
+.cards__inner-wrapper picture {
   align-self: center;
   grid-row: -1 / 1;
 
@@ -128,5 +127,20 @@
     width: 168px;
     height: 200px;
     margin-top: -122px;
+  }
+}
+
+.cards__image--small {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    padding: 28px 3px 0 4px;
+  }
+}
+
+.cards__image--big {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
   }
 }

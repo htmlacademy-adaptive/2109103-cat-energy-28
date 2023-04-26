@@ -1,1 +1,6 @@
 // стили для контейнера на странице каталога
+.container-catalog {
+  @media (min-width: $desktop-width) {
+    padding-top: 124px;
+  }
+}

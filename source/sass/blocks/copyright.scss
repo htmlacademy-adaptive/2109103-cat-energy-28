@@ -1,15 +1,28 @@
-.copyright {
+.copyright__link {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #444444;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active,
+  &:active svg {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    gap: 27px;
+    gap: 23px;
   }
 }
 
-.copyright__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+.copyright__icon {
+  fill: #666666;
 }

@@ -1,5 +1,9 @@
 .control {
   position: relative;
+
+  &:hover .control__mark {
+    border: 1px solid #bababa;
+  }
 }
 
 .control__label {

@@ -1,18 +1,23 @@
 .main-hero {
-  background-image: url("../img/hero-background-cat.jpg");
+  background: url("../img/hero-background-cat.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100%;
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 20px;
-  padding: 27px 35px 164px 35px;
+  padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-cat-x2.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    height: 800px;
     padding: 0;
+    margin: 0 auto;
     margin-top: 62px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +29,7 @@
     height: 600px;
     margin-bottom: 82px;
     align-items: center;
+    padding-top: 50px;
   }
 }
 
@@ -36,13 +42,26 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     font-size: 20px;
     line-height: 1;
     padding: 14px 26px;
+    width: 244px;
+    top: 226px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
   }
 }
 
 .main-hero__wrapper {
+  width: 87%;
+  margin: 0 auto;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 834px;
@@ -56,6 +75,25 @@
   }
 }
 
+.main-hero__text-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+.main-hero__button-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 65%;
+    max-width: 834px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .main-hero__title {
   font-weight: 400;
   font-size: 36px;
@@ -65,10 +103,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 834px;
     color: #000000;
     font-size: 60px;
     text-align: left;
     margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -81,9 +126,34 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 834px;
     color: #000000;
     font-size: 20px;
     text-align: left;
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.main-hero__image {
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+    left: 35%;
   }
 }
