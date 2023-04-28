@@ -2,12 +2,13 @@
 
 .slider {
   width: 87%;
-  max-width: 370px;
+  max-width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 72%;
-    max-width: 840px;
+    width: 100%;
+    max-width: 560px;
+    transform: translateY(-100px);
   }
 }
 
