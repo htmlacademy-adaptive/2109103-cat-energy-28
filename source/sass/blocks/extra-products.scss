@@ -14,8 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     max-width: fit-content;
     display: flex;
     gap: 80px;
@@ -36,6 +36,23 @@
   width: fit-content;
   padding-right: 21px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 2px;
+    background-color: #68b738;
+    right: 0;
+    z-index: -2;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      width: 100vw;
+      top: 20px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin-bottom: 80px;
@@ -52,7 +69,7 @@
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 834px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 

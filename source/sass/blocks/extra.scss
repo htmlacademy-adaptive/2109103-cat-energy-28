@@ -1,4 +1,8 @@
 .extra {
+  position: relative;
+}
+
+.extra__wrapper {
   margin: 0 auto;
   margin-bottom: 34px;
   width: 87%;
@@ -28,11 +32,33 @@
   line-height: 1.08;
   color: #000000;
   margin-bottom: 34px;
+  display: block;
+  width: fit-content;
+  background-color: #ffffff;
+  padding-right: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 53vw;
+    height: 2px;
+    background-color: #68b738;
+    right: 0;
+    z-index: -2;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 100vw;
+      top: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
     margin-bottom: 57px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 

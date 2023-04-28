@@ -2,7 +2,6 @@
 .logo-name {
   width: 101px;
   margin-left: 20%;
-  padding-bottom: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -20,6 +19,7 @@
 
 .logo-name--footer {
   margin-left: 0;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: block;

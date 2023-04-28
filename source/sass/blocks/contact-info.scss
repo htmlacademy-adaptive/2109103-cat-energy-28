@@ -1,4 +1,8 @@
 .contact-info {
+  position: relative;
+}
+
+.contact-info__wrapper {
   margin: 0 auto;
   margin-bottom: 24px;
   width: 87%;
@@ -29,6 +33,23 @@
   display: block;
   width: fit-content;
   background-color: #ffffff;
+  padding-right: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 2px;
+    background-color: #68b738;
+    right: 0;
+    z-index: -2;
+    top: 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 100vw;
+      top: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;

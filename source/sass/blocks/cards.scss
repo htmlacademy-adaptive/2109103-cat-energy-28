@@ -2,6 +2,52 @@
   margin-bottom: 50px;
 }
 
+.cards__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 92%;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85%;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+}
+
+.cards__main-title {
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: #000000;
+  display: block;
+  padding-top: 27px;
+  margin-bottom: 41px;
+  width: 87%;
+  max-width: 370px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    margin-bottom: 163px;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 1;
+    width: 100%;
+    max-width: 830px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1700px;
+    margin-top: 74px;
+    margin-bottom: 165px;
+  }
+}
+
 .cards__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
