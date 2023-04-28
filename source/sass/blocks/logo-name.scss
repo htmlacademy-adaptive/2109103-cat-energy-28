@@ -1,8 +1,8 @@
 // стили логотипа catenergy
 .logo-name {
   width: 101px;
-  height: 65px;
   margin-left: 20%;
+  padding-bottom: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -14,6 +14,7 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+    padding-bottom: 0;
   }
 }
 

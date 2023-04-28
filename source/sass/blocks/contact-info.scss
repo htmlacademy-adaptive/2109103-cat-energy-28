@@ -4,6 +4,7 @@
   width: 87%;
   max-width: 370px;
 
+
   @media (min-width: $tablet-width) {
     width: 82%;
     max-width: 936px;
@@ -25,10 +26,19 @@
   color: #000000;
   margin: 0;
   margin-bottom: 35px;
+  display: block;
+  width: fit-content;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
     margin-bottom: 76px;
+    padding-right: 42px;
+    padding-left: 39px;
+
+    br {
+      display: none;
+    }
   }
 }

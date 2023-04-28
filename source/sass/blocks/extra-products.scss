@@ -23,6 +23,7 @@
 }
 
 .extra-products__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -34,23 +35,6 @@
   background-color: #ffffff;
   width: fit-content;
   padding-right: 21px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 2px;
-    background-color: #68b738;
-    top: 35px;
-    left: 300px;
-    z-index: -2;
-
-    @media (min-width: $tablet-width) {
-      top: 50px;
-      left: -300px;
-    }
-  }
-
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
