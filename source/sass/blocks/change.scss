@@ -1,0 +1,24 @@
+// стили для крутилки до после
+.change {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+}
+
+.change::after {
+  content: "";
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}

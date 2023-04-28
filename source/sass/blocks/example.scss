@@ -118,3 +118,17 @@
     text-align: center;
   }
 }
+
+.example__color-wrapper {
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #d2d2d2;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
+}
