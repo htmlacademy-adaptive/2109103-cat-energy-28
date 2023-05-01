@@ -10,6 +10,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import svgo from 'gulp-svgo';
+import cheerio from 'gulp-cheerio';
 import squoosh from 'gulp-libsquoosh';
 import svgstore from 'gulp-svgstore';
 import imagemin from 'gulp-imagemin';
@@ -101,6 +102,12 @@ const createWebp = () => {
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
+    .pipe(cheerio({
+      run: ($) => {
+          $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
