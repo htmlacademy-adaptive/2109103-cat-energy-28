@@ -12,6 +12,7 @@ import terser from 'gulp-terser';
 import svgo from 'gulp-svgo';
 import squoosh from 'gulp-libsquoosh';
 import svgstore from 'gulp-svgstore';
+import imagemin from 'gulp-imagemin';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -50,14 +51,24 @@ const scripts = () => {
 
 // Images
 
+// const optimizeImages = () => {
+//   return gulp.src('source/img/**/*.{jpg,png}')
+//     .pipe(squoosh())
+//     .pipe(gulp.dest('build/img'))
+// }
+
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("build/img"))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
     .pipe(gulp.dest('build/img'))
 }
 
@@ -73,19 +84,26 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
-  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+// const svg = () =>
+//   gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+//     .pipe(svgo())
+//     .pipe(gulp.dest('build/img'));
+
+// const sprite = () => {
+//   return gulp.src('source/img/icons/*.svg')
+//     .pipe(svgo())
+//     .pipe(svgstore({
+//       inlineSvg: true
+//     }))
+//     .pipe(rename('sprite.svg'))
+//     .pipe(gulp.dest('build/img'));
+// }
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 }
 
 // Copy
@@ -146,7 +164,7 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
-    svg,
+    // svg,
     sprite,
     createWebp
   ),
@@ -162,7 +180,7 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    svg,
+    // svg,
     sprite,
     createWebp
   ),
