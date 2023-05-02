@@ -10,7 +10,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import cheerio from 'gulp-cheerio';
-import squoosh from 'gulp-libsquoosh';
+import webp from 'gulp-webp';
 import svgstore from 'gulp-svgstore';
 import imagemin from 'gulp-imagemin';
 import del from 'del';
@@ -69,11 +69,9 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squoosh( {
-      webP: {}
-    }))
-    .pipe(gulp.dest('build/img'))
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
 }
 
 // SVG
