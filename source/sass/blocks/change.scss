@@ -17,32 +17,50 @@
     opacity: 0.6;
   }
 
-  &::after {
-    content: "";
-    z-index: 3;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #666666;
-    background-color: #ffffff;
-    transform: translate(-50%, -50%);
-  }
+  // &::after {
+  //   content: "";
+  //   z-index: 3;
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 50%;
+  //   border-radius: 100%;
+  //   width: 40px;
+  //   height: 40px;
+  //   border: 2px solid #666666;
+  //   background-color: #ffffff;
+  //   transform: translate(-50%, -50%);
+  // }
 
-  &::before {
-    content: "";
-    z-index: 4;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 100%;
-    width: 24px;
-    height: 18px;
-    background-image: url("../img/slider-icon.svg");
-    transform: translate(-50%, -50%);
-  }
+  // &::before {
+  //   content: "";
+  //   z-index: 4;
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 50%;
+  //   border-radius: 100%;
+  //   width: 24px;
+  //   height: 18px;
+  //   background-image: url("../img/slider-icon.svg");
+  //   transform: translate(-50%, -50%);
+  // }
+}
+
+.change__button {
+  border: none;
+  background: transparent;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.change__icon {
+  fill: #ffffff;
+}
+
+.change__icon path {
+  fill: #666666;
 }
 
 .change:hover::after {
