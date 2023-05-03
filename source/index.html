@@ -57,8 +57,11 @@
             </p>
 
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.webp 1x, img/hero-background-product-desktop-x2 2x" type="image/webp" width="552" height="499">
               <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.png 1x, img/hero-background-product-desktop-x2.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.webp 1x, img/hero-background-product-tablet-x2.webp 2x" type="image/webp" width="708" height="609">
               <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.png 1x, img/hero-background-product-tablet-x2.png 2x" width="708" height="609">
+              <source srcset="img/hero-background-product.webp 1x, img/hero-background-product-x2.webp x2" type="image/webp" width="280" height="270">
               <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
             </picture>
 
@@ -221,15 +224,19 @@
 
                 <div class="slider__before slide">
                   <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet-x2.webp 2x" type="image/webp" width="560" height="512">
                     <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet-x2.png 2x" width="560" height="512">
-                    <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Кот до." width="280" height="256">
+                    <source srcset="img/cat-before.webp 1x, img/cat-before-x2.webp 2x" type="image/webp" width="280" height="256">
+                    <img class="slider__image slider__image--before" src="img/cat-before.png" srcset="img/cat-before-x2 2x" alt="Кот до." width="280" height="256">
                   </picture>
                 </div>
 
                 <div class="slider__after slide">
                   <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet-x2.webp 2x" type="image/webp" width="560" height="512">
                     <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet-x2.png 2x" width="560" height="512">
-                    <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Кот после." width="280" height="256">
+                    <source srcset="img/cat-after.webp 1x, img/cat-after-x2.webp 2x" type="image/webp" width="280" height="256">
+                    <img class="slider__image slider__image--after" src="img/cat-after.png" srcset="img/cat-after-x2.png 2x" alt="Кот после." width="280" height="256">
                   </picture>
                 </div>
 
