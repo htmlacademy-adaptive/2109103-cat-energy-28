@@ -12,22 +12,24 @@
   }
 }
 
+.slide {
+  grid-row: 1/2;
+  display: flex;
+  overflow: hidden;
+}
+
 .slider__image {
   display: block;
 }
 
 .slider__wrapper {
   position: relative;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: var(--persent, 50%) 1fr;
   width: 100%;
 }
 
-.slider__before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  z-index: 2;
-  width: 50%;
-  height: 100%;
+.slider__after {
+  grid-column: 2/3;
+  justify-content: flex-end;
 }
