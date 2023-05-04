@@ -108,4 +108,12 @@
       position: static;
     }
   }
+
+  .site-list__item {
+    a {
+      width: 100vw;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
