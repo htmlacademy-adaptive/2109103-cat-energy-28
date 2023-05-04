@@ -109,8 +109,8 @@
     }
   }
 
-  .site-list__item {
-    a {
+  .site-list__item a {
+    @media (max-width: $mobile-width-only) {
       width: 100vw;
       padding-left: 0;
       padding-right: 0;
