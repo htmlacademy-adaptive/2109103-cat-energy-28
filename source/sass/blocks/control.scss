@@ -1,5 +1,6 @@
 .control {
   position: relative;
+  line-height: 1.12;
 
   &:hover .control__mark {
     border: 1px solid #bababa;
@@ -11,10 +12,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #222222;
-  padding-left: 49px;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

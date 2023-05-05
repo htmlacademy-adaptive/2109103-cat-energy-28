@@ -1,10 +1,10 @@
 .radio-field {
-  padding-top: 24px;
-  padding-bottom: 19px;
+  padding-top: 29px;
+  padding-bottom: 23px;
   width: 87%;
   max-width: 370px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -25,7 +25,6 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 29px 27px 27px;
@@ -35,4 +34,8 @@
   @media (min-width: $desktop-width) {
     padding: 38px 28px;
   }
+}
+
+.radio-field__item:not(:last-child) {
+  margin-bottom: 24px;
 }
