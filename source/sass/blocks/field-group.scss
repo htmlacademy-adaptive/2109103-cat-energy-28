@@ -19,6 +19,7 @@
   width: 100%;
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
+  position: relative;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -32,6 +33,25 @@
   @media (min-width: $tablet-width) {
     padding: 18px 20px;
   }
+}
+
+.field-group__text--email,
+.field-group__text--phone {
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 20px center;
+  }
+}
+
+.field-group__text--email {
+  background-image: url("../img/email.svg");
+}
+
+.field-group__text--phone {
+  background-image: url("../img/phone.svg");
 }
 
 .field-group__text:invalid:not(:placeholder-shown) {
