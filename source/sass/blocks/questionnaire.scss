@@ -57,7 +57,7 @@
     width: 82%;
     max-width: 936px;
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,6 +105,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     width: 282px;
     padding: 13px 45px;
   }
@@ -125,7 +126,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 47px;
+    gap: 63px;
     width: 82%;
     max-width: 936px;
     margin-bottom: 72px;

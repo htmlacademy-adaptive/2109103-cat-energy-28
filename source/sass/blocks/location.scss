@@ -15,6 +15,11 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }
 
 .location__wrapper {
@@ -28,8 +33,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 92%;
+    width: 82%;
     max-width: 836px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +55,21 @@
   background-color: #f2f2f2;
 }
 
-.location__address {
+
+.location__address,
+.location__city {
   margin: 0;
   line-height: 1.43;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1;
+    text-align: right;
+  }
+}
+
+.location__city {
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
 }

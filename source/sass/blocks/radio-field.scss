@@ -27,7 +27,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 29px 27px 27px;
+    padding: 34px 29px 31px 28px;
     border: 1px solid #e7e7e7;
   }
 
@@ -37,5 +37,5 @@
 }
 
 .radio-field__item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }

@@ -9,7 +9,7 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 82%;
+    width: 92%;
     max-width: 936px;
   }
 
@@ -46,7 +46,7 @@
 
     @media (min-width: $tablet-width) {
       width: 100vw;
-      top: 20px;
+      top: 22px;
     }
   }
 
@@ -54,8 +54,8 @@
     font-size: 36px;
     line-height: 1;
     margin-bottom: 76px;
-    padding-right: 42px;
     padding-left: 39px;
+    padding-right: 42px;
 
     br {
       display: none;

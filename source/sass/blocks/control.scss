@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+    padding-left: 61px;
   }
 }
 
@@ -32,6 +33,12 @@
   transform: translateY(-50%);
   background: none;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 32%;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {
@@ -43,6 +50,14 @@
   border-radius: 50%;
   top: 30%;
   transform: translateX(65%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {

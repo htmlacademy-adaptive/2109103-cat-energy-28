@@ -5,7 +5,7 @@
   gap: 14px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 18px;
     margin-bottom: 72px;
     padding-bottom: 0;
   }
@@ -20,5 +20,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;
+  }
+}
+
+.form-text--contact {
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+    margin-bottom: 64px;
+    width: 90%;
   }
 }

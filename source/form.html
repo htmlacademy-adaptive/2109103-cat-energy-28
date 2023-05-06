@@ -61,7 +61,7 @@
 
           <div class="questionnaire__info-container">
 
-            <form class="questionnaire__form form-text" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="questionnaire__form form-text form-text--cat-info" action="https://echo.htmlacademy.ru/" method="post">
               <p class="form-text__group field-group">
                 <label class="field-group__label" for="name">Имя:*</label>
                 <input class="field-group__text field-group__text--name" name="name" id="name" type="text" placeholder="Барсик" required>
@@ -129,12 +129,12 @@
         <div class="contact-info__wrapper">
 
           <h2 class="contact-info__title">Контактные данные<br> (владельца кота)</h2>
-          <form class="questionnaire__form form-text form-text--row" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="form-text__group field-group">
+          <form class="questionnaire__form form-text form-text--row form-text--contact" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="form-text__group field-group field-group--contact">
               <label class="field-group__label" for="mail">E-mail:*</label>
               <input class="field-group__text field-group__text--email" name="mail" id="mail" type="email" placeholder="kuklachev@gmail.com" required>
             </p>
-            <p class="form-text__field-group field-group">
+            <p class="form-text__field-group field-group field-group--contact">
               <label class="field-group__label" for="phone">Телефон:*</label>
               <input class="field-group__text field-group__text--phone" name="phone" id="phone" type="text" placeholder="8 (960) 900-60-90" required>
             </p>
@@ -149,7 +149,7 @@
 
           <fieldset class="comment__group">
             <legend class="comment__title">Комментарий</legend>
-            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment__text" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
         </div>
@@ -228,11 +228,13 @@
             <p class="location__description">приглашаем<br>
               к сотрудничеству<br>
               дилеров!</p>
-            <p class="location__address">
-              ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              <span>Санкт-Петербург</span>
-            </p>
+            <div class="location__adress-wrapper">
+              <p class="location__address">
+                ул. Большая<br>
+                Конюшенная, д. 19/8<br>
+              </p>
+              <p class="location__city">Санкт-Петербург</p>
+            </div>
 
           </div>
 

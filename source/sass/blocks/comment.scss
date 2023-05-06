@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 82%;
+    width: 92%;
     max-width: 936px;
   }
 
@@ -36,6 +36,12 @@
 .comment__group textarea {
   width: 100%;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 39px;
+    padding-bottom: 21px;
+    width: 89%;
+  }
 }
 
 .comment__title {
@@ -64,7 +70,7 @@
 
     @media (min-width: $tablet-width) {
       width: 100vw;
-      top: 17px;
+      top: 23px;
     }
   }
 

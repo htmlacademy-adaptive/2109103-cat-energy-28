@@ -24,7 +24,10 @@
   height: 24px;
 
   @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
     display: block;
     padding-bottom: 0;
+    margin-right: 142px;
   }
 }
