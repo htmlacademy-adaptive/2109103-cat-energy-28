@@ -30,6 +30,10 @@
   @media (min-width: $tablet-width) {
     gap: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+  }
 }
 
 .copyright__icon {

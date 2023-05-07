@@ -43,6 +43,10 @@
     border: none;
     gap: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 1px;
+  }
 }
 
 .social__item {

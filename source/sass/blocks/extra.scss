@@ -15,8 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 85%;
+    width: 90%;
     max-width: 1700px;
+    margin-bottom: 42px;
   }
 }
 
@@ -73,16 +74,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 19px;
     grid-row-gap: 24px;
     padding-left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
   }
 }
 

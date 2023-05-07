@@ -14,9 +14,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 85%;
+    width: 90%;
     max-width: 1700px;
-    margin-bottom: 67px;
+    margin-bottom: 64px;
   }
 }
 
@@ -60,5 +60,9 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
   }
 }

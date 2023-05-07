@@ -39,6 +39,10 @@
     height: 40px;
     top: 32%;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 33%;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {
