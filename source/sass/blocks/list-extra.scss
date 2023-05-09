@@ -1,3 +1,9 @@
+.list-extra {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
 .list-extra__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -34,6 +40,7 @@
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
+    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +56,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
+    justify-self: end;
+    align-self: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,8 +82,10 @@
     grid-template-columns: 65% 21% 1fr;
     grid-template-rows: auto 1fr;
     padding: 38px;
-    padding-top: 26px;
+    padding-top: 24px;
     padding-bottom: 28px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,6 +124,10 @@
   border: none;
   grid-column: -1 / 1;
   margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 192px;

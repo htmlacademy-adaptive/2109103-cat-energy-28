@@ -1,6 +1,10 @@
 .extra-products {
   margin-bottom: 34px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .extra-products__wrapper {

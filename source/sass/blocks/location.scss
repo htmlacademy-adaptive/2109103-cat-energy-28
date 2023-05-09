@@ -76,8 +76,10 @@
   }
 }
 
-.location__city {
+.location__adress-wrapper {
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
