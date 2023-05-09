@@ -70,8 +70,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 65% 21% 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 38px;
     padding-top: 26px;
     padding-bottom: 28px;
   }
