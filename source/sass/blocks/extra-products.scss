@@ -1,5 +1,5 @@
 .extra-products {
-  margin-bottom: 54px;
+  margin-bottom: 34px;
   position: relative;
 }
 
@@ -80,4 +80,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

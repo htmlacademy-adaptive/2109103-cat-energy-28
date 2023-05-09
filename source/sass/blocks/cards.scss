@@ -1,5 +1,5 @@
 .cards {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .cards__wrapper {
@@ -53,9 +53,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.25;
   text-transform: uppercase;
   color: #222222;
   margin: 0;
+  margin-bottom: 13px;
   justify-self: start;
 
   @media (min-width: $tablet-width) {
@@ -73,7 +75,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 33px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -126,7 +127,7 @@
   padding: 10px 110px;
   border: none;
   grid-column: -1 / 1;
-  margin-top: 13px;
+  margin-top: 17px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -144,7 +145,7 @@
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   width: 87%;
   max-width: 280px;
   margin: 0 auto;
@@ -176,6 +177,10 @@
   }
 }
 
+.cards__image {
+  display: block;
+}
+
 .cards__image--small {
   @media (min-width: $tablet-width) {
     width: 161px;
@@ -184,8 +189,27 @@
   }
 }
 
-.cards__image--big {
+.cards__image--extra-small {
+  padding-top: 24px;
+
   @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.cards__image--smallest {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.cards__image--big {
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
     width: 168px;
     height: 200px;
   }
