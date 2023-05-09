@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .cards__wrapper {
@@ -47,7 +51,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     max-width: 1700px;
-    margin-top: 74px;
+    margin-top: 64px;
     margin-bottom: 165px;
   }
 }
@@ -75,6 +79,11 @@
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 77%;
+    margin-bottom: 12px;
   }
 }
 
@@ -171,7 +180,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 35px;
+    padding: 30px 38px;
+    padding-bottom: 40px;
   }
 }
 
@@ -180,10 +190,14 @@
   grid-row: -1 / 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     width: 168px;
     height: 200px;
     margin-top: -153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -141px;
   }
 }
 

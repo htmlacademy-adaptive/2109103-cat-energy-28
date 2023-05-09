@@ -27,6 +27,10 @@
     width: auto;
     padding: 51px 38px 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+  }
 }
 
 .more__icon {
@@ -123,6 +127,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 21px;
+    gap: 0;
   }
 }

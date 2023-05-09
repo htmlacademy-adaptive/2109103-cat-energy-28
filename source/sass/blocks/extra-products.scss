@@ -75,6 +75,11 @@
     max-width: 834px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    max-width: 1700px;
+  }
 }
 
 .extra-products__list {

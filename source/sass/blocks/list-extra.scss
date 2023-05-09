@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .list-extra__title {
@@ -45,6 +49,7 @@
 
   @media (min-width: $desktop-width) {
     justify-self: start;
+    align-self: center;
   }
 }
 
@@ -63,6 +68,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
     justify-self: start;
+    align-self: center;
   }
 }
 
@@ -92,8 +98,12 @@
     align-items: center;
     grid-template-columns: 325px 243px 85px 245px;
     grid-template-rows: 1fr;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-right: none;
+    border-left: none;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -133,5 +143,6 @@
     width: 192px;
     padding: 7px 26px;
     grid-column: 4;
+    margin-top: 0;
   }
 }
