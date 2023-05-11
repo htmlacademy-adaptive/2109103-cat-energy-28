@@ -19,10 +19,11 @@
   line-height: 1;
   color: #000000;
   text-align: center;
-  padding: 14px 42px;
+  padding: 14px 41px;
   padding-bottom: 17px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -64,7 +65,7 @@
 .results__description--weight {
   position: absolute;
   top: 50%;
-  transform: translateY(60%);
+  transform: translateY(68%);
   left: 8%;
 
   @media (min-width: $tablet-width) {
@@ -80,8 +81,8 @@
 .results__description--days {
   position: absolute;
   top: 50%;
-  transform: translateY(60%);
-  right: 7%;
+  transform: translateY(69%);
+  right: 8%;
 
   @media (min-width: $tablet-width) {
     width: 142px;

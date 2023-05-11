@@ -28,7 +28,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
-  padding: 7px 58px;
+  padding: 11px 58px;
   border: none;
   width: 100%;
 
@@ -94,6 +94,8 @@
 }
 
 .main-hero__button-wrapper {
+  margin-top: 4px;
+
   @media (min-width: $tablet-width) {
     width: 65%;
     max-width: 834px;
