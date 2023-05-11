@@ -38,4 +38,9 @@
   top: 50%;
   transform: translateY(-50%);
   right: 6px;
+
+  @media (min-width: $tablet-width) {
+    top: 53%;
+    right: -3px;
+  }
 }

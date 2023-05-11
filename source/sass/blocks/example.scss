@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +24,7 @@
     width: 92%;
     max-width: 834px;
     margin: 0 auto;
+    margin-bottom: 221px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +87,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 43px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,13 +112,15 @@
     width: 174px;
     text-align: right;
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.2;
     align-self: baseline;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     width: 327px;
     text-align: center;
+    margin-top: 0;
   }
 }
 
@@ -128,6 +132,7 @@
     background-color: #eaeaea;
     padding-bottom: 0;
     margin: 0;
+    height: 461px;
   }
 
   @media (min-width: $desktop-width) {
