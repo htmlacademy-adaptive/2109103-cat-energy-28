@@ -30,7 +30,7 @@
 
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-right: 94px;
+      margin-right: 80px;
     }
   }
 }
@@ -73,6 +73,10 @@
     align-self: flex-start;
     margin-bottom: 21px;
     max-width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: initial;
   }
 }
 

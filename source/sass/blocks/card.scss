@@ -8,10 +8,10 @@
 
   @media (min-width: $desktop-width) {
     width: 46%;
-    padding: 77px 61px 55px 52px;
+    padding: 69px 61px 55px 53px;
 
     &:last-child {
-      padding: 77px 67px 55px 52px;
+      padding: 69px 67px 55px 57px;
     }
   }
 }
@@ -36,8 +36,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 35%;
-    margin-bottom: 73px;
+    padding-left: 36%;
+    margin-bottom: 64px;
   }
 }
 
@@ -66,7 +66,7 @@
       width: 100px;
       height: 106px;
       left: 0;
-      top: -20px;
+      top: -25px;
     }
   }
 }
@@ -95,7 +95,7 @@
       background-image: url("../img/cat-image-going-desktop.svg");
       width: 134px;
       height: 100px;
-      left: 0;
+      left: -19px;
       top: -20px;
       right: initial;
     }
@@ -115,6 +115,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }

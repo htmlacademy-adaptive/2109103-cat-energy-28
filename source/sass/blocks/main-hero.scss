@@ -22,6 +22,7 @@
     margin-bottom: 82px;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 42px;
   }
 }
 
@@ -44,8 +45,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 70%;
-    left: 8%;
+    top: 66%;
+    left: 6.7%;
   }
 }
 
@@ -92,6 +93,10 @@
     background: none;
     padding: 0;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 73%;
   }
 }
 
@@ -171,5 +176,6 @@
     top: 141px;
     left: 37%;
     transform: translateX(0);
+    z-index: 0;
   }
 }
