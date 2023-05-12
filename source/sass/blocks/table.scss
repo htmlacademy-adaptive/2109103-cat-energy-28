@@ -21,7 +21,7 @@
 
 .table__cell {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -29,8 +29,9 @@
     line-height: 1;
 
     &:not(:first-child) {
-      padding-top: 9px;
-      padding-bottom: 9px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      word-spacing: 3px;
     }
   }
 }

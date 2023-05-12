@@ -1,7 +1,4 @@
 .logo-cat {
-  width: 33px;
-  height: 65px;
-
   &:hover {
     opacity: 0.8;
   }
@@ -13,5 +10,11 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    padding-top: 27px;
   }
 }

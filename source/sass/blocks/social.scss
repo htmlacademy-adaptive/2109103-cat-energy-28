@@ -12,7 +12,6 @@
     max-width: 840px;
     margin: 0 auto;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -33,12 +32,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 1px;
+  }
+}
+
+.social__item {
+  min-width: 28px;
+  min-height: 22px;
+  padding: 10px;
+  position: relative;
 }
 
 .social__icon {
   display: inline-block;
-  padding: 10px;
   fill: #666666;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 
   &:hover {
     fill: #68b738;

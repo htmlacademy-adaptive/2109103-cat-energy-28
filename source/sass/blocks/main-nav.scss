@@ -2,6 +2,10 @@
 
 .main-nav {
   width: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .main-nav__toggle {
@@ -106,6 +110,14 @@
   .main-nav__list {
     @media (min-width: $mobile-width-only) {
       position: static;
+    }
+  }
+
+  .site-list__item a {
+    @media (max-width: $mobile-width-only) {
+      width: 100vw;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

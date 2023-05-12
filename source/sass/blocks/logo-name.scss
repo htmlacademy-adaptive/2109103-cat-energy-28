@@ -1,7 +1,6 @@
 // стили логотипа catenergy
 .logo-name {
   width: 101px;
-  height: 65px;
   margin-left: 20%;
 
   &:hover {
@@ -14,13 +13,25 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+    padding-bottom: 0;
   }
 }
 
 .logo-name--footer {
   margin-left: 0;
+  padding-bottom: 20px;
+  width: 128px;
+  height: 24px;
 
   @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
     display: block;
+    padding-bottom: 0;
+    margin-right: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 398px;
   }
 }

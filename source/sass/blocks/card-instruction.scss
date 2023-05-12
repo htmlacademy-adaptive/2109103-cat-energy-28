@@ -12,7 +12,7 @@
     justify-content: space-evenly;
 
     &:nth-child(2n + 1) {
-      margin-right: 21%;
+      margin-right: 139px;
     }
 
     &::before {
@@ -30,13 +30,13 @@
 
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-right: 94px;
+      margin-right: 80px;
     }
   }
 }
 
 .card-instruction:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
@@ -53,12 +53,12 @@
 
 .card-instruction__image {
   display: block;
-  padding: 15px 17px;
+  padding: 16px 17px;
+  background-color: #68b738;
 
   @media (min-width: $tablet-width) {
     padding: 26px 27px;
   }
-  background-color: #68b738;
 }
 
 .card-instruction__description {
@@ -71,5 +71,19 @@
     font-size: 16px;
     line-height: 1.5;
     align-self: flex-start;
+    margin-bottom: 21px;
+    max-width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: initial;
+  }
+}
+
+.card-instruction__description:last-child {
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
   }
 }

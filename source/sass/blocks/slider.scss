@@ -1,27 +1,39 @@
 // стили для слайдера с котами до и после
 
 .slider {
+  width: 87%;
+  max-width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    background-color: #d2d2d2;
+    width: 100%;
+    max-width: 560px;
+    transform: translateY(-151px);
   }
 
   @media (min-width: $desktop-width) {
-    background: none;
+    transform: translateY(-204px);
   }
 }
 
-.slider__wrapper {
-  width: 87%;
-  max-width: 370px;
-  margin: 0 auto;
+.slide {
+  grid-row: 1/2;
+  display: flex;
+  overflow: hidden;
+}
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 92%;
-    max-width: 840px;
-  }
+.slider__image {
+  display: block;
+}
+
+.slider__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--persent, 50%) 1fr;
+  width: 100%;
+}
+
+.slider__after {
+  grid-column: 2/3;
+  justify-content: flex-end;
 }

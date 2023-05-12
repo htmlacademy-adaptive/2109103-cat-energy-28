@@ -1,5 +1,6 @@
 .control {
   position: relative;
+  line-height: 1.12;
 
   &:hover .control__mark {
     border: 1px solid #bababa;
@@ -11,14 +12,15 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #222222;
-  padding-left: 49px;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
+    padding-left: 61px;
   }
 }
 
@@ -31,6 +33,16 @@
   transform: translateY(-50%);
   background: none;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 32%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 33%;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {
@@ -42,6 +54,14 @@
   border-radius: 50%;
   top: 30%;
   transform: translateX(65%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {

@@ -1,3 +1,12 @@
+.copyright {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-left: auto;
+  }
+}
+
 .copyright__link {
   font-family: inherit;
   font-weight: 400;
@@ -19,7 +28,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    gap: 23px;
+    gap: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
   }
 }
 

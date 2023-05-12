@@ -4,9 +4,13 @@
   gap: 32px;
   margin-bottom: 34px;
 
+  @media (min-width: $tablet-width) {
+    gap: 41px;
+  }
+
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    gap: 42px;
+    gap: 40px;
     margin-bottom: 55px;
   }
 }
@@ -19,16 +23,17 @@
   line-height: 1;
   color: #000000;
   text-align: center;
-  padding: 14px 42px;
+  padding: 14px 41px;
   padding-bottom: 17px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 1.23;
     padding: 15px 57px;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
   }
 }
 
@@ -37,8 +42,8 @@
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 30px;
-    padding-bottom: 25px;
+    padding: 14px 29px;
+    padding-bottom: 19px;
   }
 }
 
@@ -64,12 +69,12 @@
 .results__description--weight {
   position: absolute;
   top: 50%;
-  transform: translateY(60%);
+  transform: translateY(68%);
   left: 8%;
 
   @media (min-width: $tablet-width) {
     left: 6%;
-    top: 77%;
+    top: 75%;
 
     br {
       display: none;
@@ -80,8 +85,8 @@
 .results__description--days {
   position: absolute;
   top: 50%;
-  transform: translateY(60%);
-  right: 7%;
+  transform: translateY(69%);
+  right: 8%;
 
   @media (min-width: $tablet-width) {
     width: 142px;

@@ -7,7 +7,15 @@
   align-items: center;
 }
 
+.field-group--contact {
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
 .field-group__label {
+  font-size: 16px;
+  line-height: 1.12;
   flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
@@ -19,6 +27,7 @@
   width: 100%;
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
+  position: relative;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -29,18 +38,44 @@
     border: 2px solid #444444;
   }
 
-  &:invalid {
-    border: 2px solid #ff8282;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 18px 20px;
   }
 }
 
+.field-group__text--email,
+.field-group__text--phone {
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  appearance: none;
+  padding-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    background-position: right 20px center;
+  }
+}
+
+.field-group__text--email {
+  background-image: url("../img/email.svg");
+}
+
+.field-group__text--phone {
+  background-image: url("../img/phone.svg");
+}
+
+.field-group__text:invalid:not(:placeholder-shown) {
+  box-shadow: inset 0 0 0 2px #ff8282;
+}
+
 .field-group__text::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.12;
+  text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }

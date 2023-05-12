@@ -1,17 +1,17 @@
 .card {
-  padding: 21px 33px 18px 19px;
+  padding: 30px 33px 15px 19px;
   background-color: #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 67px 316px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 46%;
-    padding: 77px 61px 55px 52px;
+    padding: 69px 61px 55px 53px;
 
     &:last-child {
-      padding: 77px 67px 55px 52px;
+      padding: 69px 67px 55px 57px;
     }
   }
 }
@@ -31,13 +31,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 35%;
-    margin-bottom: 73px;
+    padding-left: 36%;
+    margin-bottom: 64px;
   }
 }
 
@@ -58,7 +58,7 @@
       height: 211px;
       left: initial;
       right: -256px;
-      top: 0;
+      top: 14px;
     }
 
     @media (min-width: $desktop-width) {
@@ -66,7 +66,7 @@
       width: 100px;
       height: 106px;
       left: 0;
-      top: -20px;
+      top: -25px;
     }
   }
 }
@@ -88,14 +88,14 @@
       height: 200px;
       left: initial;
       right: -290px;
-      top: 0;
+      top: 25px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/cat-image-going-desktop.svg");
       width: 134px;
       height: 100px;
-      left: 0;
+      left: -19px;
       top: -20px;
       right: initial;
     }
@@ -110,11 +110,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     color: #000000;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }

@@ -1,6 +1,10 @@
 .extra-products {
-  margin-bottom: 54px;
+  margin-bottom: 34px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .extra-products__wrapper {
@@ -9,13 +13,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 92%;
     max-width: 834px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     max-width: fit-content;
     display: flex;
     gap: 80px;
@@ -23,6 +27,7 @@
 }
 
 .extra-products__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,19 +43,19 @@
   &::before {
     content: "";
     position: absolute;
-    width: 200%;
+    width: 50vw;
     height: 2px;
     background-color: #68b738;
-    top: 35px;
-    left: 300px;
+    right: 0;
     z-index: -2;
+    top: 15px;
 
     @media (min-width: $tablet-width) {
-      top: 50px;
-      left: -300px;
+      left: 0;
+      width: 100vw;
+      top: 20px;
     }
   }
-
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -68,7 +73,12 @@
   @media (min-width: $tablet-width) {
     width: 92%;
     max-width: 834px;
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
+    max-width: 1700px;
   }
 }
 
@@ -79,4 +89,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

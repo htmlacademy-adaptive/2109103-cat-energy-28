@@ -6,6 +6,12 @@
     align-items: center;
     flex-grow: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+    justify-content: initial;
+    align-items: initial;
+  }
 }
 
 .site-list a {
@@ -26,7 +32,14 @@
   @media (min-width: $tablet-width) {
     border: none;
     background: none;
-    padding: 10px 0;
+    padding: 7px 0;
+    padding-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 38px;
+    padding-bottom: 10px;
   }
 }
 
@@ -84,6 +97,11 @@
         background: #ffffff;
       }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    margin-right: 33px;
   }
 }
 

@@ -1,0 +1,43 @@
+// стили для крутилки до после
+.change {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #68b738;
+    opacity: 0.6;
+  }
+}
+
+.change__button {
+  border: none;
+  background: transparent;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+.change__icon {
+  fill: #666666;
+  padding: 9px 6px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 2px solid #666666;
+
+  &:hover {
+    fill: #68b738;
+    border: 2px solid #68b738;
+  }
+}

@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon-152x152.png">
   </head>
   <body class="page__body">
 
@@ -45,18 +47,25 @@
 
         <section class="main-hero">
 
+            <div class="main-hero__text-wrapper">
+
+              <h1 class="main-hero__title">
+                Функциональное<br>питание для котов
+              </h1>
+              <p class="main-hero__description">
+                Занялся собой? Займись котом!
+              </p>
+
+            </div>
+
           <div class="main-hero__wrapper">
 
-            <h1 class="main-hero__title">
-              Функциональное<br>питание для котов
-            </h1>
-            <p class="main-hero__description">
-              Занялся собой? Займись котом!
-            </p>
-
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.webp 1x, img/hero-background-product-desktop-x2.webp 2x" type="image/webp" width="552" height="499">
               <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.png 1x, img/hero-background-product-desktop-x2.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.webp 1x, img/hero-background-product-tablet-x2.webp 2x" type="image/webp" width="708" height="609">
               <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.png 1x, img/hero-background-product-tablet-x2.png 2x" width="708" height="609">
+              <source srcset="img/hero-background-product.webp 1x, img/hero-background-product-x2.webp x2" type="image/webp" width="280" height="270">
               <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
             </picture>
 
@@ -178,7 +187,7 @@
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца,
               просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок!
+              Отличный результат<br>без изнуряющих тренировок!
               При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
 
@@ -212,17 +221,42 @@
 
           </div>
 
-          <div class="example__slider slider">
-            <div class="slider__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet-x2.png 2x" width="560" height="512">
-                <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Кот до." width="280" height="256">
-              </picture>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet-x2.png 2x" width="560" height="512">
-                <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Кот после." width="280" height="256">
-              </picture>
+          <div class="example__color-wrapper">
+
+            <div class="example__slider slider">
+              <div class="slider__wrapper">
+
+                <div class="slider__before slide">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet-x2.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet-x2.png 2x" width="560" height="512">
+                    <source srcset="img/cat-before.webp 1x, img/cat-before-x2.webp 2x" type="image/webp" width="280" height="256">
+                    <img class="slider__image slider__image--before" src="img/cat-before.png" srcset="img/cat-before-x2 2x" alt="Кот до." width="280" height="256">
+                  </picture>
+                </div>
+
+                <div class="slider__after slide">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet-x2.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet-x2.png 2x" width="560" height="512">
+                    <source srcset="img/cat-after.webp 1x, img/cat-after-x2.webp 2x" type="image/webp" width="280" height="256">
+                    <img class="slider__image slider__image--after" src="img/cat-after.png" srcset="img/cat-after-x2.png 2x" alt="Кот после." width="280" height="256">
+                  </picture>
+                </div>
+
+                <div class="slider__change change">
+                  <span class="visually-hidden">Показывает вес кота до и после корма.</span>
+                  <button class="change__button">
+                    <svg class="change__icon" width="24" height="18" aria-hidden="true" focusable="false">
+                      <use href="img/sprite.svg#slider-icon-changer"></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
             </div>
+
           </div>
 
         </div>
@@ -241,11 +275,13 @@
             <p class="location__description">приглашаем<br>
               к сотрудничеству<br>
               дилеров!</p>
-            <p class="location__address">
-              ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              <span>Санкт-Петербург</span>
-            </p>
+            <div class="location__adress-wrapper">
+              <p class="location__address">
+                ул. Большая<br>
+                Конюшенная, д. 19/8<br>
+              </p>
+              <p class="location__city">Санкт-Петербург</p>
+            </div>
 
           </div>
 
