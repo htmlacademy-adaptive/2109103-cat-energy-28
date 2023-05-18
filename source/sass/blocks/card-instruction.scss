@@ -66,6 +66,29 @@
   line-height: 1.29;
   align-self: center;
   position: relative;
+  padding-left: 81px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/card-instruction/card-instruction-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 28px;
+    display: block;
+    padding: 16px 17px;
+    background-color: #68b738;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      transform: translateY(0);
+      padding: 26px 27px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -73,10 +96,30 @@
     align-self: flex-start;
     margin-bottom: 21px;
     max-width: 245px;
+    padding-left: 0;
+    padding-top: 110px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: initial;
+  }
+}
+
+.card-instruction__description--powder {
+  &::before {
+    background-image: url("../img/card-instruction/card-instruction-powder.svg");
+  }
+}
+
+.card-instruction__description--fork-knife {
+  &::before {
+    background-image: url("../img/card-instruction/card-instruction-eat.svg");
+  }
+}
+
+.card-instruction__description--time {
+  &::before {
+    background-image: url("../img/card-instruction/card-instruction-time.svg");
   }
 }
 
