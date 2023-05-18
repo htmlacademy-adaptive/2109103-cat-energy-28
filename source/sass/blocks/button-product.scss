@@ -8,15 +8,21 @@
   color: #000000;
   background-color: transparent;
   display: inline-block;
-  padding: 6px 47px 4px 0;
+  padding: 6px 58px 4px 0;
   border: none;
   position: relative;
   cursor: pointer;
 
   &:hover {
     .button-product__go-to-icon {
-      width: 32px;
-      right: 0;
+      transform: scaleX(1.3);
+      top: 24%;
+      right: 14px;
+
+      @media (min-width: $tablet-width) {
+        right: 1px;
+        top: 10px;
+      }
     }
   }
 
@@ -37,10 +43,14 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 6px;
+  right: 17px;
 
   @media (min-width: $tablet-width) {
     top: 53%;
-    right: -3px;
+    right: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6px;
   }
 }

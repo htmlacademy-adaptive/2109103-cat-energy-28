@@ -7,6 +7,11 @@
   }
 }
 
+.control__input:disabled + .control__mark,
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
 .control__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
