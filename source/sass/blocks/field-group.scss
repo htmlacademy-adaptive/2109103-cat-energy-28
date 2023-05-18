@@ -24,6 +24,8 @@
 }
 
 .field-group__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
   width: 100%;
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
@@ -39,6 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     padding: 18px 20px;
   }
 }
