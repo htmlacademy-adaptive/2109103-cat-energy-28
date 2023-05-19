@@ -27,10 +27,11 @@
 }
 
 .main-hero__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
-  padding: 11px 72px;
+  padding: 11px 18px;
   border: none;
   width: 100%;
 
@@ -103,6 +104,8 @@
 
 .main-hero__button-wrapper {
   margin-top: 4px;
+  width: 87%;
+  max-width: 370px;
 
   @media (min-width: $tablet-width) {
     width: 65%;

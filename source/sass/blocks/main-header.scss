@@ -38,6 +38,7 @@
   max-width: 370px;
   position: relative;
   margin-right: auto;
+  align-self: flex-start;
 
   @media (min-width: $tablet-width) {
     height: 52px;
