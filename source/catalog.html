@@ -14,7 +14,7 @@
   <body class="page__body">
 
     <header class="main-header">
-      <a href="#" class="main-header__logo">
+      <a href="index.html" class="main-header__logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="174" height="51">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" >
@@ -23,7 +23,7 @@
         <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
       </a>
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--nojs">
 
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
@@ -58,14 +58,19 @@
 
                 <div class="cards__inner-wrapper">
 
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.webp 1x, img/catalog/energy-chicken-small-desktop-x2.webp 2x" type="image/webp">
-                    <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.png 1x, img/catalog/energy-chicken-small-desktop-x2.png 2x">
-                    <source srcset="img/catalog/energy-chicken-small.webp 1x, img/catalog/energy-chicken-small-x2.webp 2x" type="image/webp">
-                    <img class="cards__image cards__image--small" src="img/catalog/energy-chicken-small.png" srcset="img/catalog/energy-chicken-small-x2.png 2x" alt="Кэт Энерджи с курицей маленький." width="68" height="86">
-                  </picture>
+                  <a class="cards__link" href="product-card.html">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.webp 1x, img/catalog/energy-chicken-small-desktop-x2.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="img/catalog/energy-chicken-small-desktop.png 1x, img/catalog/energy-chicken-small-desktop-x2.png 2x">
+                      <source srcset="img/catalog/energy-chicken-small.webp 1x, img/catalog/energy-chicken-small-x2.webp 2x" type="image/webp">
+                      <img class="cards__image cards__image--small" src="img/catalog/energy-chicken-small.png" srcset="img/catalog/energy-chicken-small-x2.png 2x" alt="Кэт Энерджи с курицей маленький." width="68" height="86">
+                    </picture>
+                  </a>
 
-                  <h2 class="cards__title">Cat Energy<br> PRO 500 г</h2>
+                  <a class="cards__link" href="product-card.html">
+                    <h2 class="cards__title">Cat Energy<br> PRO 500 г</h2>
+                  </a>
+
                   <dl class="cards__table table">
 
                     <div class="table__wrapper">
