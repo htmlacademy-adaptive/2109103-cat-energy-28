@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .extra-products__wrapper {

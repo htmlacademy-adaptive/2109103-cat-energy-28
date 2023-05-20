@@ -37,5 +37,9 @@
 }
 
 .radio-field__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }

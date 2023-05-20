@@ -31,13 +31,14 @@
   grid-row: -1 / 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 64px;
     width: 168px;
     height: 200px;
     margin-top: -153px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
     margin-top: -141px;
   }
 }
