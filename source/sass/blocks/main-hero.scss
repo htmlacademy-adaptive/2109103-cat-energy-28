@@ -27,10 +27,11 @@
 }
 
 .main-hero__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
-  padding: 11px 58px;
+  padding: 11px 18px;
   border: none;
   width: 100%;
 
@@ -38,7 +39,7 @@
     position: absolute;
     font-size: 20px;
     line-height: 1;
-    padding: 17px 26px;
+    padding: 17px 0;
     width: 244px;
     top: 0;
     left: 0;
@@ -79,6 +80,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+  background-color: #68b738;
   padding-top: 27px;
   padding-bottom: 164px;
 
@@ -102,6 +104,8 @@
 
 .main-hero__button-wrapper {
   margin-top: 4px;
+  width: 87%;
+  max-width: 370px;
 
   @media (min-width: $tablet-width) {
     width: 65%;

@@ -46,7 +46,7 @@
   @media (min-width: $desktop-width) {
     width: 85%;
     max-width: 1700px;
-    padding: 56px 81px 56px 87px;
+    padding: 57px 82px 59px 86px;
     background-color: #ffffff;
   }
 }
@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    line-height: 1.2;
   }
 }
 
@@ -81,5 +82,9 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 19px;
   }
 }

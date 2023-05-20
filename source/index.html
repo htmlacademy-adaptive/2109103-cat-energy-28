@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicon-152x152.png">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
 
@@ -20,7 +23,7 @@
         <img class="logo-name" src="img/logo-name.svg" alt="Название магазина на английском." width="101" height="18">
       </a>
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--nojs">
 
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
@@ -65,15 +68,15 @@
               <source media="(min-width: 1440px)" srcset="img/hero-background-product-desktop.png 1x, img/hero-background-product-desktop-x2.png 2x" width="552" height="499">
               <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.webp 1x, img/hero-background-product-tablet-x2.webp 2x" type="image/webp" width="708" height="609">
               <source media="(min-width: 768px)" srcset="img/hero-background-product-tablet.png 1x, img/hero-background-product-tablet-x2.png 2x" width="708" height="609">
-              <source srcset="img/hero-background-product.webp 1x, img/hero-background-product-x2.webp x2" type="image/webp" width="280" height="270">
+              <source srcset="img/hero-background-product.webp 1x, img/hero-background-product-x2.webp 2x" type="image/webp" width="280" height="270">
               <img class="main-hero__image" src="../img/hero-background-product.png" width="280" height="270" srcset="../img/hero-background-product-x2.png 2x" alt="Пример товара кэт энерджи">
             </picture>
 
             <div class="main-hero__button-wrapper">
 
-              <button class="main-hero__button button" type="button">
+              <a class="main-hero__button button" href="form.html">
                 Подобрать программу
-              </button>
+              </a>
 
             </div>
 
@@ -135,7 +138,6 @@
           <ul class="explainer__list">
 
             <li class="explainer__card card-instruction">
-              <img class="card-instruction__image" src="img/card-instruction/card-instruction-leaf.svg" alt="Питательные вещества." width="25" height="28">
               <p class="card-instruction__description">
                 Функциональное питание<br>
                 содержит только полезные<br>
@@ -144,8 +146,7 @@
             </li>
 
             <li class="explainer__card card-instruction">
-              <img class="card-instruction__image" src="img/card-instruction/card-instruction-powder.svg" alt="Питательные вещества." width="26" height="29">
-              <p class="card-instruction__description">
+              <p class="card-instruction__description card-instruction__description--powder">
                 Выпускается в виде порошка,<br>
                 который нужно лишь залить<br>
                 кипятком и готово.
@@ -153,8 +154,7 @@
             </li>
 
             <li class="explainer__card card-instruction">
-              <img class="card-instruction__image" src="img/card-instruction/card-instruction-eat.svg" alt="Питательные вещества." width="25" height="30">
-              <p class="card-instruction__description">
+              <p class="card-instruction__description card-instruction__description--fork-knife">
                 Замените один-два приема<br>
                 обычной еды на наше<br>
                 функциональное питание.
@@ -162,8 +162,7 @@
             </li>
 
             <li class="explainer__card card-instruction">
-              <img class="card-instruction__image" src="img/card-instruction/card-instruction-time.svg" alt="Питательные вещества." width="26" height="31">
-              <p class="card-instruction__description">
+              <p class="card-instruction__description card-instruction__description--time">
                 Уже через месяц<br>
                 наслаждайтесь изменениями<br>
                 к лучшему вашего питомца!
@@ -246,7 +245,7 @@
 
                 <div class="slider__change change">
                   <span class="visually-hidden">Показывает вес кота до и после корма.</span>
-                  <button class="change__button">
+                  <button class="change__button" aria-label="Показать кота до и после корма">
                     <svg class="change__icon" width="24" height="18" aria-hidden="true" focusable="false">
                       <use href="img/sprite.svg#slider-icon-changer"></use>
                     </svg>
@@ -333,7 +332,6 @@
                 <span class="copyright__text">
                   HTML Academy
                 </span>
-                <span class="visually-hidden">HTML Academy</span>
                 <svg class="copyright__icon" width="27" height="34" focusable="false">
                   <use href="img/sprite.svg#icon-htmlacademy"></use>
                 </svg>

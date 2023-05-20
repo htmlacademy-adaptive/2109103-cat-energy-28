@@ -24,6 +24,30 @@
   }
 }
 
+.cards__link {
+  margin: 0;
+  text-decoration: none;
+  align-self: center;
+  grid-row: -1 / 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+    width: 168px;
+    height: 200px;
+    margin-top: -153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    margin-top: -141px;
+  }
+}
+
+.cards__text-link {
+  text-decoration: none;
+  justify-self: start;
+}
+
 .cards__main-title {
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
@@ -186,22 +210,23 @@
 }
 
 .cards__inner-wrapper picture {
-  align-self: center;
-  grid-row: -1 / 1;
+  // align-self: center;
+  // grid-row: -1 / 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
-    width: 168px;
-    height: 200px;
-    margin-top: -153px;
+    // margin-bottom: 70px;
+    // width: 168px;
+    // height: 200px;
+    // margin-top: -153px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -141px;
+    // margin-top: -141px;
   }
 }
 
 .cards__image {
+  margin: 0;
   display: block;
 }
 

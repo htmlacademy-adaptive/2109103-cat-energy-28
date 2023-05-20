@@ -27,6 +27,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 39px;
     margin-bottom: 64px;
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 94%;
   }
 }

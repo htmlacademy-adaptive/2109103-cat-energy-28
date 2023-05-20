@@ -13,11 +13,15 @@
     margin: 0 auto;
     flex-direction: row;
     align-items: center;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 85%;
     max-width: 1700px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
