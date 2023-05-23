@@ -55,14 +55,12 @@
 .main-hero__wrapper {
   width: 87%;
   margin: 0 auto;
-  max-width: 370px;
   display: flex;
   flex-direction: column;
   margin-top: -165px;
 
   @media (min-width: $tablet-width) {
     width: 68%;
-    max-width: 834px;
     margin: 0 auto;
     margin-top: -54px;
     position: relative;
@@ -92,7 +90,6 @@
   @media (min-width: $tablet-width) {
     width: 69%;
     margin: 0 auto;
-    max-width: 834px;
     background: none;
     padding: 0;
     position: relative;
@@ -107,12 +104,10 @@
   margin: 0 auto;
   margin-top: 4px;
   width: 87%;
-  max-width: 370px;
   order: 3;
 
   @media (min-width: $tablet-width) {
     width: 69%;
-    max-width: 834px;
     margin: 0 auto;
     order: initial;
   }
