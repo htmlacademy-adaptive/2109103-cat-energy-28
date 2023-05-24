@@ -5,12 +5,9 @@
 .contact-info__wrapper {
   margin: 0 auto;
   width: 87%;
-  max-width: 370px;
-
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    max-width: 936px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +34,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 50vw;
+    width: 90vw;
     height: 2px;
     background-color: #68b738;
     right: 0;
