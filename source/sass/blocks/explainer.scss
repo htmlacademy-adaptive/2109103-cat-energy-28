@@ -12,12 +12,10 @@
 
 .explainer__wrapper {
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    max-width: 834px;
     margin: 0 auto;
   }
 
@@ -30,17 +28,21 @@
 
 .explainer__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 26px;
   margin: 0;
   padding: 0;
   counter-reset: number 0;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     justify-content: space-between;
   }
 }

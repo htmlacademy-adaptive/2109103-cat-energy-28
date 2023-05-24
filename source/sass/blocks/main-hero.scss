@@ -2,6 +2,8 @@
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -18,11 +20,11 @@
     max-width: 1700px;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    height: 600px;
+
     margin-bottom: 82px;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 42px;
+    padding-bottom: 185px;
   }
 }
 
@@ -31,12 +33,11 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
-  padding: 11px 18px;
+  padding: 11px 0;
   border: none;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     font-size: 20px;
     line-height: 1;
     padding: 17px 0;
@@ -54,16 +55,14 @@
 .main-hero__wrapper {
   width: 87%;
   margin: 0 auto;
-  max-width: 370px;
   display: flex;
   flex-direction: column;
   margin-top: -165px;
 
   @media (min-width: $tablet-width) {
     width: 68%;
-    max-width: 834px;
     margin: 0 auto;
-    margin-top: -29px;
+    margin-top: -54px;
     position: relative;
   }
 
@@ -91,7 +90,6 @@
   @media (min-width: $tablet-width) {
     width: 69%;
     margin: 0 auto;
-    max-width: 834px;
     background: none;
     padding: 0;
     position: relative;
@@ -103,18 +101,20 @@
 }
 
 .main-hero__button-wrapper {
+  margin: 0 auto;
   margin-top: 4px;
   width: 87%;
-  max-width: 370px;
+  order: 3;
 
   @media (min-width: $tablet-width) {
-    width: 65%;
-    max-width: 834px;
+    width: 69%;
     margin: 0 auto;
+    order: initial;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 73%;
+    order: 2;
   }
 }
 
@@ -135,6 +135,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-top: 174px;
   }
 }
 
@@ -150,7 +151,7 @@
     color: #000000;
     font-size: 20px;
     text-align: left;
-    margin-bottom: 78px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {

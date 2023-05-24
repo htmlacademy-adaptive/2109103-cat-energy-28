@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: space-between;
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
 
@@ -53,6 +52,15 @@
   padding: 10px 93px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 79px;

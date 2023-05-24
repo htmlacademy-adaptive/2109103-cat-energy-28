@@ -11,9 +11,9 @@
     gap: 0;
     justify-content: space-evenly;
 
-    &:nth-child(2n + 1) {
-      margin-right: 139px;
-    }
+    // &:nth-child(2n + 1) {
+    //   margin-right: 139px;
+    // }
 
     &::before {
       content: counter(number);
@@ -29,25 +29,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
-  }
-}
-
-.card-instruction:not(:last-child) {
-  margin-bottom: 26px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 39px;
-
-    &:nth-child(3) {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    // &:not(:last-child) {
+    //   margin-right: 80px;
+    // }
   }
 }
 

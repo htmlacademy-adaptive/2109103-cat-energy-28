@@ -10,12 +10,10 @@
 
 .questionnaire__header-wrapper {
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 82%;
-    max-width: 936px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,7 +53,6 @@
 
   @media (min-width: $tablet-width) {
     width: 82%;
-    max-width: 936px;
     margin: 0 auto;
     margin-bottom: 75px;
   }
@@ -72,11 +69,13 @@
 
 .questionnaire__info-container {
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 936px;
   }
 }

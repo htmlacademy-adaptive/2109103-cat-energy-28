@@ -13,20 +13,18 @@
 
 .extra-products__wrapper {
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    max-width: 834px;
   }
 
   @media (min-width: $desktop-width) {
     width: 85%;
     margin: 0 auto;
-    max-width: fit-content;
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
+    max-width: 1700px;
   }
 }
 
@@ -47,7 +45,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 50vw;
+    width: 90vw;
     height: 2px;
     background-color: #68b738;
     right: 0;
@@ -71,12 +69,10 @@
 
 .extra-products__title-wrapper {
   width: 87%;
-  max-width: 370px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    max-width: 834px;
     margin: 0 auto;
   }
 

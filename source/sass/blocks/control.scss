@@ -33,6 +33,15 @@
   }
 }
 
+.control-label--extra {
+  display: block;
+  width: 178px;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .control__mark {
   display: block;
   position: absolute;
